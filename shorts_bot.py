@@ -44,12 +44,12 @@ FPS             = 30
 
 SCRIPTS = [
     {
-    "title":    "Scent changes attraction instantly",
-    "hook":     "A person’s natural scent can subconsciously increase sexual attraction within seconds.",
-    "story":    "Humans constantly pick up chemical cues through scent, even without realizing it. During attraction, the brain links smell with memory, comfort, and arousal — which is why someone’s scent can become deeply addictive and emotionally charged.",
-    "outro":    "Sometimes chemistry is literal. Follow for more.",
-    "tags":     ["#psychology", "#desire", "#adultfacts", "#science"],
-    "keywords": ["perfume closeup", "dark luxury room", "sensual shadows", "golden cinematic lighting"],
+    "title":    "Biting releases stronger emotional reactions",
+    "hook":     "Light biting can trigger intense sensory responses in the brain.",
+    "story":    "The lips, neck, and inner skin areas contain dense nerve endings highly sensitive to pressure and temperature. During intimate moments, mild pain mixed with pleasure can amplify adrenaline, attention, and emotional intensity.",
+    "outro":    "The brain experiences pleasure in surprisingly complex ways. Follow for more.",
+    "tags":     ["#science", "#adultfacts", "#psychology", "#intimacy"],
+    "keywords": ["closeup lips", "dark red lighting", "sensual shadows", "romantic tension"],
 }
 ]
 
@@ -110,7 +110,7 @@ def generate_voice(text: str, out_path: str):
             "en-US-AriaNeural",
             "en-US-GuyNeural",
             "en-GB-SoniaNeural",
-            "en-AU-NatashaNeural",
+            "en-AU-NatashaNeural","en-IN-NeerjaNeural", "en-IN-PrabhatNeural"
         ]
         voice = random.choice(voices)
         print(f"  Generating voiceover with {voice}...")
