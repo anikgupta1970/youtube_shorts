@@ -273,7 +273,7 @@ def make_short(script: dict, index: int) -> str:
     dark_overlay = (
         ColorClip((VIDEO_W, VIDEO_H), color=(0, 0, 0))
         .with_duration(duration)
-        .with_opacity(0.45)
+        .with_opacity(0.25)
     )
 
     # ── Karaoke captions ──
