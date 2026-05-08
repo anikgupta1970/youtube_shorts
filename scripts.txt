@@ -2,7 +2,7 @@
 # ─────────────────────────────────────────────────────────────────────────────
 # YouTube Shorts Scripts — Psychology, Brain Facts & Human Behavior
 # Each script is ~90 words spoken (~35 seconds at natural TTS pace)
-# Copy-paste any of these into the SCRIPTS list in shorts_bot_new.py
+# Music options: ambient | mysterious | cinematic | upbeat | lofi
 # ─────────────────────────────────────────────────────────────────────────────
 
 SCRIPTS = [
@@ -15,6 +15,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#bodylanguage", "#brainfacts", "#humanbehavior"],
         "hashtags": "#psychology #bodylanguage #brainfacts #humanbehavior #mindblown #shorts #fyp",
         "keywords": ["smile closeup cinematic", "fake smile portrait", "dramatic face lighting", "human emotion aesthetic"],
+        "music": "ambient",
     },
 
     {
@@ -25,6 +26,7 @@ SCRIPTS = [
         "tags": ["#brainfacts", "#psychology", "#memory", "#mindblow"],
         "hashtags": "#brainfacts #psychology #memory #mindblow #shorts #fyp #science",
         "keywords": ["walking through doorway cinematic", "empty room dramatic lighting", "forgetful person thinking", "minimalist interior aesthetic"],
+        "music": "ambient",
     },
 
     {
@@ -35,6 +37,7 @@ SCRIPTS = [
         "tags": ["#brainfacts", "#neuroscience", "#mindpower", "#psychology"],
         "hashtags": "#brainfacts #neuroscience #mindpower #psychology #shorts #fyp",
         "keywords": ["dreaming person cinematic", "brain visualization abstract", "imagination aesthetic portrait", "glowing mind concept art"],
+        "music": "cinematic",
     },
 
     {
@@ -45,6 +48,7 @@ SCRIPTS = [
         "tags": ["#brainfacts", "#empathy", "#neuroscience", "#humanbehavior"],
         "hashtags": "#brainfacts #empathy #neuroscience #humanbehavior #shorts #fyp",
         "keywords": ["person yawning closeup", "tired face dramatic lighting", "social connection cinematic", "human emotion portrait"],
+        "music": "lofi",
     },
 
     {
@@ -55,6 +59,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#decisionmaking", "#mindset", "#humanbehavior"],
         "hashtags": "#psychology #decisionmaking #mindset #humanbehavior #shorts #fyp",
         "keywords": ["overwhelmed person shopping", "too many options cinematic", "decision fatigue aesthetic", "crowded store dramatic lighting"],
+        "music": "lofi",
     },
 
     {
@@ -65,6 +70,7 @@ SCRIPTS = [
         "tags": ["#music", "#brainfacts", "#dopamine", "#neuroscience"],
         "hashtags": "#music #brainfacts #dopamine #neuroscience #shorts #fyp",
         "keywords": ["person listening to music emotional", "headphones cinematic portrait", "music wave visualization", "emotional face dramatic lighting"],
+        "music": "upbeat",
     },
 
     {
@@ -75,6 +81,7 @@ SCRIPTS = [
         "tags": ["#brainfacts", "#psychology", "#neuroscience", "#mindblown"],
         "hashtags": "#brainfacts #psychology #neuroscience #mindblown #shorts #fyp",
         "keywords": ["face in clouds abstract", "pareidolia visual illusion", "random patterns cinematic", "brain perception aesthetic"],
+        "music": "mysterious",
     },
 
     {
@@ -85,6 +92,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#socialskills", "#humanbehavior", "#mindset"],
         "hashtags": "#psychology #socialskills #humanbehavior #mindset #shorts #fyp",
         "keywords": ["two people talking cinematic", "helping hand dramatic lighting", "social interaction aesthetic", "friendship connection portrait"],
+        "music": "ambient",
     },
 
     {
@@ -95,6 +103,7 @@ SCRIPTS = [
         "tags": ["#sleep", "#brainfacts", "#science", "#neuroscience"],
         "hashtags": "#sleep #brainfacts #science #neuroscience #shorts #fyp",
         "keywords": ["person sleeping cinematic", "dreaming aesthetic portrait", "brain activity visualization", "night time dramatic lighting"],
+        "music": "lofi",
     },
 
     {
@@ -105,6 +114,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#selfawareness", "#confidence", "#mindset"],
         "hashtags": "#psychology #selfawareness #confidence #mindset #shorts #fyp",
         "keywords": ["person in crowd cinematic", "spotlight dramatic lighting", "self conscious aesthetic portrait", "busy street dramatic"],
+        "music": "lofi",
     },
 
     {
@@ -115,6 +125,7 @@ SCRIPTS = [
         "tags": ["#science", "#brainfacts", "#human", "#mindblown"],
         "hashtags": "#science #brainfacts #human #mindblown #shorts #fyp",
         "keywords": ["flowers closeup cinematic", "sensory dramatic portrait", "smell aesthetic macro", "nature closeup beautiful"],
+        "music": "cinematic",
     },
 
     {
@@ -125,6 +136,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#productivity", "#mindset", "#decisionmaking"],
         "hashtags": "#psychology #productivity #mindset #decisionmaking #shorts #fyp",
         "keywords": ["tired person at night cinematic", "decision making dramatic", "exhausted face portrait", "late night aesthetic"],
+        "music": "lofi",
     },
 
     {
@@ -135,6 +147,7 @@ SCRIPTS = [
         "tags": ["#brainfacts", "#neuroscience", "#science", "#mindblown"],
         "hashtags": "#brainfacts #neuroscience #science #mindblown #shorts #fyp",
         "keywords": ["noisy party crowd cinematic", "person listening dramatic", "crowded room aesthetic", "sound wave visualization"],
+        "music": "mysterious",
     },
 
     {
@@ -145,6 +158,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#mindset", "#selfawareness", "#humanbehavior"],
         "hashtags": "#psychology #mindset #selfawareness #humanbehavior #shorts #fyp",
         "keywords": ["confident person cinematic portrait", "knowledge concept dramatic", "overconfident aesthetic", "thinking person dramatic lighting"],
+        "music": "ambient",
     },
 
     {
@@ -155,6 +169,7 @@ SCRIPTS = [
         "tags": ["#brainfacts", "#neuroscience", "#dejavu", "#mindblown"],
         "hashtags": "#brainfacts #neuroscience #dejavu #mindblown #shorts #fyp",
         "keywords": ["glitch visual effect cinematic", "mind bending aesthetic", "surreal portrait dramatic", "memory concept art"],
+        "music": "mysterious",
     },
 
     {
@@ -165,7 +180,8 @@ SCRIPTS = [
         "tags": ["#bodylanguage", "#psychology", "#confidence", "#communication"],
         "hashtags": "#bodylanguage #psychology #confidence #communication #shorts #fyp",
         "keywords": ["confident posture portrait cinematic", "body language dramatic", "standing tall aesthetic", "power pose professional"],
-    }, 
+        "music": "cinematic",
+    },
 
     {
         "title": "Social media is engineered to exploit your brain",
@@ -175,6 +191,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#socialmedia", "#dopamine", "#mindset"],
         "hashtags": "#psychology #socialmedia #dopamine #mindset #shorts #fyp",
         "keywords": ["phone scrolling cinematic", "social media addiction dramatic", "screen glow aesthetic", "slot machine concept visual"],
+        "music": "mysterious",
     },
 
     {
@@ -185,6 +202,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#bodylanguage", "#eyecontact", "#socialskills"],
         "hashtags": "#psychology #bodylanguage #eyecontact #socialskills #shorts #fyp",
         "keywords": ["intense eye contact portrait", "staring dramatic close up", "eyes cinematic macro", "human gaze aesthetic portrait"],
+        "music": "mysterious",
     },
 
     {
@@ -195,6 +213,7 @@ SCRIPTS = [
         "tags": ["#brainfacts", "#memory", "#neuroscience", "#mindblown"],
         "hashtags": "#brainfacts #memory #neuroscience #mindblown #shorts #fyp",
         "keywords": ["memory fading aesthetic cinematic", "brain reconstruction visualization", "vintage photo blur dramatic", "mind concept art portrait"],
+        "music": "mysterious",
     },
 
     {
@@ -205,6 +224,7 @@ SCRIPTS = [
         "tags": ["#brainfacts", "#science", "#neuroscience", "#mindblown"],
         "hashtags": "#brainfacts #science #neuroscience #mindblown #shorts #fyp",
         "keywords": ["brain electricity visualization", "neuron firing abstract cinematic", "light bulb dramatic glow", "electric concept art aesthetic"],
+        "music": "cinematic",
     },
 
     {
@@ -215,6 +235,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#mindset", "#brainfacts", "#motivation"],
         "hashtags": "#psychology #mindset #brainfacts #motivation #shorts #fyp",
         "keywords": ["scared excited face portrait cinematic", "adrenaline rush dramatic", "fear emotion aesthetic", "rollercoaster dramatic shot"],
+        "music": "upbeat",
     },
 
     {
@@ -225,6 +246,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#firstimpression", "#humanbehavior", "#socialskills"],
         "hashtags": "#psychology #firstimpression #humanbehavior #socialskills #shorts #fyp",
         "keywords": ["meeting handshake cinematic", "first impression dramatic portrait", "social interaction aesthetic", "professional meeting lighting"],
+        "music": "cinematic",
     },
 
     {
@@ -235,6 +257,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#mindset", "#brainfacts", "#awareness"],
         "hashtags": "#psychology #mindset #brainfacts #awareness #shorts #fyp",
         "keywords": ["red car street cinematic", "attention focus dramatic", "frequency illusion aesthetic", "crowd spotting one thing"],
+        "music": "ambient",
     },
 
     {
@@ -245,6 +268,7 @@ SCRIPTS = [
         "tags": ["#psychology", "#kindness", "#mentalhealth", "#brainfacts"],
         "hashtags": "#psychology #kindness #mentalhealth #brainfacts #shorts #fyp",
         "keywords": ["helping hand cinematic portrait", "kindness moment dramatic", "two people connecting aesthetic", "gratitude emotion close up"],
+        "music": "ambient",
     },
 
     {
@@ -255,6 +279,7 @@ SCRIPTS = [
         "tags": ["#science", "#brainfacts", "#gutbrain", "#neuroscience"],
         "hashtags": "#science #brainfacts #gutbrain #neuroscience #shorts #fyp",
         "keywords": ["stomach body cinematic", "gut feeling dramatic", "nervous system visualization", "human body aesthetic portrait"],
+        "music": "ambient",
     },
 
 ]
