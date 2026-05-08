@@ -43,14 +43,14 @@ FPS             = 30
 SCRIPTS = [
     
    {
-        "title": "The human brain generates enough electricity to power a light bulb",
-        "hook": "Right now, without doing anything special, your brain is producing roughly 23 watts of electrical power.",
-        "story": "The brain contains approximately 86 billion neurons, each capable of firing electrochemical signals up to a thousand times per second. The combined electrical activity of this network generates enough power to keep a small light bulb glowing. During deep focus, creative flow states, or vivid dreaming, this output increases noticeably. Your brain consumes around 20 percent of your body's total energy while accounting for only 2 percent of its weight.",
-        "outro": "The most powerful electrical device you will ever own is already inside your head. Follow for more mind facts.",
-        "tags": ["#brainfacts", "#science", "#neuroscience", "#mindblown"],
-        "hashtags": "#brainfacts #science #neuroscience #mindblown #shorts #fyp",
-        "keywords": ["brain electricity visualization", "neuron firing abstract cinematic", "light bulb dramatic glow", "electric concept art aesthetic"],
-        "music": "cinematic",
+        "title": "Your gut has its own independent nervous system",
+        "hook": "Your gut contains over 500 million neurons and can make decisions completely independently of your brain — which is why scientists call it the second brain.",
+        "story": "The enteric nervous system lining your digestive tract communicates bidirectionally with your brain via the vagus nerve, but it can also function entirely on its own. It produces approximately 95 percent of your body's serotonin — the primary mood-regulating neurotransmitter. This is why chronic stress shows up as digestive problems, why anxiety physically lives in your stomach, and why gut feelings are often neurologically real signals rather than metaphors.",
+        "outro": "Your gut is not just digesting food. It is processing your emotional world in parallel with your brain. Follow for more.",
+        "tags": ["#science", "#brainfacts", "#gutbrain", "#neuroscience"],
+        "hashtags": "#science #brainfacts #gutbrain #neuroscience #shorts #fyp",
+        "keywords": ["stomach body cinematic", "gut feeling dramatic", "nervous system visualization", "human body aesthetic portrait"],
+        "music": "ambient",
     }
 ]
 
@@ -229,7 +229,7 @@ def get_pexels_video(keywords: list, duration_needed: float) -> Optional[str]:
 
         random.shuffle(videos)
         for v in videos:
-            if v.get("duration", 0) < max(10, duration_needed - 5):
+            if v.get("duration", 0) < 8:  # shorter clips are looped to fill duration
                 continue
             files = sorted(v.get("video_files", []),
                            key=lambda f: f.get("height", 0), reverse=True)
@@ -433,15 +433,22 @@ def make_short(script: dict, index: int) -> str:
             color=fallback_colors[index % len(fallback_colors)]
         ).with_duration(duration)
 
-    # ── Title card (first frame = cover photo) ──
-    font = FONT_PATH if os.path.exists(FONT_PATH) else "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
-
-    # Dark overlay only during the title card so the main video stays vibrant
+    # ── Overlays ──
+    # Light overlay for the whole video — just enough for caption readability
+    dark_overlay = (
+        ColorClip((VIDEO_W, VIDEO_H), color=(0, 0, 0))
+        .with_duration(duration)
+        .with_opacity(0.10)
+    )
+    # Heavy overlay only during title card — creates visible brightness jump when it ends
     title_bg = (
         ColorClip((VIDEO_W, VIDEO_H), color=(0, 0, 0))
         .with_duration(title_duration)
-        .with_opacity(0.55)
+        .with_opacity(0.50)
     )
+
+    # ── Title card (first frame = cover photo) ──
+    font = FONT_PATH if os.path.exists(FONT_PATH) else "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
     title_clip = (
         TextClip(
             text=script["title"].upper(),
@@ -466,7 +473,7 @@ def make_short(script: dict, index: int) -> str:
     print(f"  {len(text_clips)} caption chunks created.")
 
     # ── Compose & export ──
-    layers = [base, title_bg, title_clip] + text_clips
+    layers = [base, dark_overlay, title_bg, title_clip] + text_clips
     print("  Compositing and exporting (this takes 1-3 min)...")
     final = (
         CompositeVideoClip(layers, size=(VIDEO_W, VIDEO_H))
@@ -478,6 +485,7 @@ def make_short(script: dict, index: int) -> str:
         fps=FPS,
         codec="libx264",
         audio_codec="aac",
+        bitrate="1500k",
         threads=4,
         preset="fast",
         logger=None,
