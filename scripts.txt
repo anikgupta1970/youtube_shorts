@@ -7,279 +7,482 @@
 
 SCRIPTS = [
 
-    {
-        "title": "Your subconscious notices fake smiles instantly",
-        "hook": "Humans can subconsciously detect when a smile is not genuine — and it happens faster than you can consciously process.",
-        "story": "Real smiles activate tiny muscles around the eyes called Duchenne markers. These muscles cannot be voluntarily controlled by most people. Fake smiles usually only involve the mouth, and your brain picks up on the mismatch almost immediately — within 200 milliseconds. Scientists believe this ability evolved to help us detect deception in social groups, where trusting the wrong person could be dangerous.",
-        "outro": "Your brain is running a lie detector on every face you see, every single day. Follow for more psychology facts.",
-        "tags": ["#psychology", "#bodylanguage", "#brainfacts", "#humanbehavior"],
-        "hashtags": "#psychology #bodylanguage #brainfacts #humanbehavior #mindblown #shorts #fyp",
-        "keywords": ["smile closeup cinematic", "fake smile portrait", "dramatic face lighting", "human emotion aesthetic"],
-        "music": "ambient",
-    },
+{
+    "title": "Your brain ignores your nose",
+    "hook": "You can always see your nose, but your brain chooses to hide it.",
+    "story": "Your nose is constantly sitting inside your field of vision. But your brain filters it out automatically so it does not distract you. The moment you focus on it, you suddenly notice it again. Your brain removes information it considers unnecessary every second of the day.",
+    "outro": "Your brain edits reality more than you realize. Follow for more.",
+    "hashtags": "#brainfacts #psychology #science #shorts #fyp",
+    "keywords": [
+        "human eye cinematic",
+        "brain visualization dark",
+        "face closeup aesthetic",
+        "perception psychology",
+        "mind illusion abstract"
+    ],
+    "music": "mysterious"
+},
 
-    {
-        "title": "Walking through a door makes you forget",
-        "hook": "There is a scientific reason you walk into a room and completely forget why you went there in the first place.",
-        "story": "Psychologists call it the Doorway Effect. Your brain uses physical spaces as mental chapters. When you cross a threshold, it treats that boundary as a signal to archive the previous thought and open a new mental context. This process is so automatic that even imagining walking through a doorway in your mind can trigger the same forgetting response in lab experiments.",
-        "outro": "Your brain resets every time you enter a new space. Follow for more mind-blowing science.",
-        "tags": ["#brainfacts", "#psychology", "#memory", "#mindblow"],
-        "hashtags": "#brainfacts #psychology #memory #mindblow #shorts #fyp #science",
-        "keywords": ["walking through doorway cinematic", "empty room dramatic lighting", "forgetful person thinking", "minimalist interior aesthetic"],
-        "music": "ambient",
-    },
+{
+    "title": "Humans are addicted to unpredictability",
+    "hook": "Your brain loves random rewards more than guaranteed ones.",
+    "story": "When rewards become unpredictable, your dopamine system becomes even more active. That is why gambling, notifications, and social media scrolling feel addictive. Your brain keeps chasing the possibility of something exciting happening next.",
+    "outro": "Your brain is wired to chase uncertainty. Follow for more.",
+    "hashtags": "#dopamine #psychology #brainfacts #shorts #fyp",
+    "keywords": [
+        "slot machine cinematic",
+        "phone scrolling dark",
+        "dopamine animation",
+        "human brain aesthetic",
+        "casino psychology"
+    ],
+    "music": "dark"
+},
 
-    {
-        "title": "Your brain cannot tell real from imagined",
-        "hook": "Every time you vividly imagine doing something, your brain treats it almost identically to actually doing it.",
-        "story": "Brain scans confirm that imagining an experience and living it activate nearly the same neural pathways. This is why athletes who visualize their performance improve almost as much as those who physically practice. Your brain does not separate simulation from reality at the neurological level. The more detailed and emotionally charged your visualization, the more your brain accepts it as genuine experience.",
-        "outro": "Your imagination is a training ground your brain takes completely seriously. Follow for more daily mind facts.",
-        "tags": ["#brainfacts", "#neuroscience", "#mindpower", "#psychology"],
-        "hashtags": "#brainfacts #neuroscience #mindpower #psychology #shorts #fyp",
-        "keywords": ["dreaming person cinematic", "brain visualization abstract", "imagination aesthetic portrait", "glowing mind concept art"],
-        "music": "cinematic",
-    },
+{
+    "title": "Your body reacts before your mind",
+    "hook": "Your body can sense danger before you consciously realize it.",
+    "story": "Your subconscious constantly scans tiny details around you like facial expressions, movement, tone of voice, and patterns. Sometimes your body reacts before your conscious brain understands why. That strange feeling something is wrong is often your brain detecting hidden signals.",
+    "outro": "Your instincts are smarter than you think. Follow for more.",
+    "hashtags": "#psychology #brainfacts #humanmind #shorts #fyp",
+    "keywords": [
+        "dark hallway cinematic",
+        "human instincts dramatic",
+        "fear psychology",
+        "suspense atmosphere",
+        "body reaction closeup"
+    ],
+    "music": "tense"
+},
 
-    {
-        "title": "You yawn because of mirror neurons",
-        "hook": "Yawning is contagious — and the biological reason behind it reveals something remarkable about how humans are wired for empathy.",
-        "story": "Your brain contains mirror neurons that fire when you observe someone else performing an action, creating an internal simulation of that action in yourself. Contagious yawning is a direct result of this system. Studies show it is strongest between people who are emotionally close. The more empathy you naturally feel toward others, the more easily their yawn will trigger yours. Sociopaths almost never catch yawns.",
-        "outro": "Even reading the word yawn right now might be making you yawn. Follow for more brain science.",
-        "tags": ["#brainfacts", "#empathy", "#neuroscience", "#humanbehavior"],
-        "hashtags": "#brainfacts #empathy #neuroscience #humanbehavior #shorts #fyp",
-        "keywords": ["person yawning closeup", "tired face dramatic lighting", "social connection cinematic", "human emotion portrait"],
-        "music": "lofi",
-    },
+{
+    "title": "Your memories are partly fake",
+    "hook": "Your brain rewrites your memories every time you remember them.",
+    "story": "Memories are not stored like video recordings. Every time you remember something, your brain rebuilds the memory from fragments. During that process, emotions and imagination can slowly change the details over time.",
+    "outro": "Some of your strongest memories may not be fully real anymore. Follow for more.",
+    "hashtags": "#memory #psychology #brainfacts #shorts #fyp",
+    "keywords": [
+        "nostalgia cinematic",
+        "memory visualization",
+        "brain neurons dark",
+        "old photos aesthetic",
+        "mind reconstruction"
+    ],
+    "music": "sad"
+},
 
-    {
-        "title": "The more choices you have the less happy you are",
-        "hook": "Having more options does not make people happier with their final choice — it actually does the opposite.",
-        "story": "Psychologist Barry Schwartz named this the Paradox of Choice. When you select from hundreds of options, your brain keeps simulating the alternatives you did not pick. This creates ongoing doubt and regret, even when your choice was objectively good. Studies show people given fewer options report higher satisfaction, decide faster, and feel more confident in their decisions. More freedom of choice creates less freedom of mind.",
-        "outro": "Fewer options equals more happiness. Simplify your decisions and your brain will thank you. Follow for more.",
-        "tags": ["#psychology", "#decisionmaking", "#mindset", "#humanbehavior"],
-        "hashtags": "#psychology #decisionmaking #mindset #humanbehavior #shorts #fyp",
-        "keywords": ["overwhelmed person shopping", "too many options cinematic", "decision fatigue aesthetic", "crowded store dramatic lighting"],
-        "music": "lofi",
-    },
+{
+    "title": "Your phone is training your brain",
+    "hook": "Your phone is rewiring your attention span every day.",
+    "story": "Constant notifications, short videos, and endless scrolling flood your brain with dopamine. Over time, your brain becomes less comfortable with silence, boredom, and slower activities like reading or deep focus.",
+    "outro": "Your brain becomes what you repeatedly consume. Follow for more.",
+    "hashtags": "#dopamine #socialmedia #brainfacts #shorts #fyp",
+    "keywords": [
+        "phone scrolling cinematic",
+        "dopamine visualization",
+        "social media addiction",
+        "technology dark aesthetic",
+        "human attention span"
+    ],
+    "music": "dramatic"
+},
 
-    {
-        "title": "Your brain on music gets a dopamine hit",
-        "hook": "That chills-down-your-spine feeling from a song is called frisson — and science has found it is genuinely rare.",
-        "story": "Only around 65 percent of people experience frisson at all. When it happens, your brain releases dopamine — the same reward chemical triggered by food, love, and achievement. Music that surprises your brain, such as an unexpected chord change or a sudden shift in dynamics, is most likely to trigger it. Your brain rewards itself for successfully predicting and then being pleasantly surprised by musical patterns.",
-        "outro": "If music gives you chills, your brain is wired differently from most people. Follow for more fascinating science.",
-        "tags": ["#music", "#brainfacts", "#dopamine", "#neuroscience"],
-        "hashtags": "#music #brainfacts #dopamine #neuroscience #shorts #fyp",
-        "keywords": ["person listening to music emotional", "headphones cinematic portrait", "music wave visualization", "emotional face dramatic lighting"],
-        "music": "upbeat",
-    },
+{
+    "title": "Your brain predicts the future",
+    "hook": "Your brain is constantly predicting what will happen next.",
+    "story": "Your brain builds predictions based on patterns, memories, and past experiences. That is why you can often finish sentences before people say them. Most of your daily experience is actually your brain guessing reality milliseconds ahead of time.",
+    "outro": "Your brain is basically a prediction machine. Follow for more.",
+    "hashtags": "#brainfacts #science #psychology #shorts #fyp",
+    "keywords": [
+        "future prediction abstract",
+        "timeline cinematic",
+        "brain visualization dark",
+        "human thoughts aesthetic",
+        "mind science"
+    ],
+    "music": "cinematic"
+},
 
-    {
-        "title": "You see faces in random objects and cannot stop",
-        "hook": "Seeing a face in a cloud, a burnt piece of toast, or an electrical socket is not your imagination running wild — it is your brain working exactly as designed.",
-        "story": "This is called Pareidolia. The human brain has a dedicated face-detection module so finely tuned by evolution that it constantly fires false positives. For our ancestors, mistaking a shadow for a predator cost nothing. Missing a real predator cost everything. So the brain learned to err heavily on the side of seeing faces — even when none exist.",
-        "outro": "Your brain is so obsessed with faces it invents them everywhere. Follow for daily brain facts.",
-        "tags": ["#brainfacts", "#psychology", "#neuroscience", "#mindblown"],
-        "hashtags": "#brainfacts #psychology #neuroscience #mindblown #shorts #fyp",
-        "keywords": ["face in clouds abstract", "pareidolia visual illusion", "random patterns cinematic", "brain perception aesthetic"],
-        "music": "mysterious",
-    },
+{
+    "title": "Silence changes your brain",
+    "hook": "Your brain becomes strange in complete silence.",
+    "story": "When everything becomes silent, your brain starts searching aggressively for patterns and sounds. That is why people sometimes hear phantom vibrations, whispers, or even their own name being called in quiet environments.",
+    "outro": "Your brain creates signals when stimulation disappears. Follow for more.",
+    "hashtags": "#brainfacts #science #psychology #shorts #fyp",
+    "keywords": [
+        "dark room cinematic",
+        "silence atmosphere",
+        "human brain mystery",
+        "night aesthetic",
+        "mind illusion"
+    ],
+    "music": "mysterious"
+},
 
-    {
-        "title": "Doing a favour makes you like someone more",
-        "hook": "Here is a counterintuitive truth — helping someone actually makes you like them more, not them like you more.",
-        "story": "This is the Benjamin Franklin Effect. When you do a favour for someone, your brain experiences cognitive dissonance. It asks: why would I help this person unless I actually liked them? To resolve the conflict, your brain quietly updates your opinion of them upward. Benjamin Franklin famously exploited this to turn a rival legislator into a close ally simply by asking to borrow one of his books.",
-        "outro": "Ask someone for a small favour if you want them to like you more. Follow for more psychology hacks.",
-        "tags": ["#psychology", "#socialskills", "#humanbehavior", "#mindset"],
-        "hashtags": "#psychology #socialskills #humanbehavior #mindset #shorts #fyp",
-        "keywords": ["two people talking cinematic", "helping hand dramatic lighting", "social interaction aesthetic", "friendship connection portrait"],
-        "music": "ambient",
-    },
+{
+    "title": "Loneliness physically hurts",
+    "hook": "Your brain treats loneliness like physical pain.",
+    "story": "Studies show social rejection activates many of the same brain regions linked to physical injury. Humans evolved to survive in groups, so isolation feels dangerous to the brain at a biological level.",
+    "outro": "Loneliness is not just emotional. Your brain treats it as survival. Follow for more.",
+    "hashtags": "#psychology #humanbehavior #brainfacts #shorts #fyp",
+    "keywords": [
+        "lonely person cinematic",
+        "rain window aesthetic",
+        "human emotions dark",
+        "isolation visuals",
+        "sad atmosphere"
+    ],
+    "music": "sad"
+},
 
-    {
-        "title": "Your brain is more active when you are asleep",
-        "hook": "While you are sleeping, your brain is actually more electrically active than when you are sitting awake watching television.",
-        "story": "During REM sleep your brain replays the day's experiences, strips emotional weight from traumatic memories, and consolidates information into long-term storage. It also runs simulations — which is what dreams are. People who sleep after learning something new perform up to 40 percent better on recall tests the next day. Sleep is not downtime for your brain. It is when the real work gets done.",
-        "outro": "Every hour of sleep you skip is an hour of learning your brain loses. Follow for more science facts.",
-        "tags": ["#sleep", "#brainfacts", "#science", "#neuroscience"],
-        "hashtags": "#sleep #brainfacts #science #neuroscience #shorts #fyp",
-        "keywords": ["person sleeping cinematic", "dreaming aesthetic portrait", "brain activity visualization", "night time dramatic lighting"],
-        "music": "lofi",
-    },
+{
+    "title": "Your eyes are never still",
+    "hook": "Your eyes are constantly moving even when you think they are still.",
+    "story": "Tiny movements called microsaccades happen nonstop to keep your vision active. Without them, your brain would slowly stop processing stationary images and parts of your vision could fade away.",
+    "outro": "Your brain needs constant movement to keep reality visible. Follow for more.",
+    "hashtags": "#science #vision #brainfacts #shorts #fyp",
+    "keywords": [
+        "eye macro cinematic",
+        "vision science abstract",
+        "human eye closeup",
+        "brain visual processing",
+        "dark science visuals"
+    ],
+    "music": "ambient"
+},
 
-    {
-        "title": "The spotlight effect is lying to you",
-        "hook": "You are convinced everyone around you notices your mistakes, your outfit, and your awkward moments. Science says they almost certainly do not.",
-        "story": "Psychologists call this the Spotlight Effect. Your brain assumes other people are tracking you with the same obsessive attention you give yourself. In reality, most people are too absorbed in their own internal monologue to register yours. In studies, participants who wore embarrassing T-shirts into a room estimated that half the room noticed. The actual number was closer to 25 percent.",
-        "outro": "The audience you are performing for mostly exists only in your own head. Follow for more psychology facts.",
-        "tags": ["#psychology", "#selfawareness", "#confidence", "#mindset"],
-        "hashtags": "#psychology #selfawareness #confidence #mindset #shorts #fyp",
-        "keywords": ["person in crowd cinematic", "spotlight dramatic lighting", "self conscious aesthetic portrait", "busy street dramatic"],
-        "music": "lofi",
-    },
+{
+    "title": "Casinos manipulate time",
+    "hook": "Casinos are designed to destroy your sense of time.",
+    "story": "Most casinos avoid clocks and windows completely. Without sunlight or time references, your brain slowly loses track of how long you have been gambling. The environment is carefully engineered to keep you emotionally engaged for as long as possible.",
+    "outro": "The building itself is part of the psychological trap. Follow for more.",
+    "hashtags": "#casino #psychology #mindgames #shorts #fyp",
+    "keywords": [
+        "casino lights cinematic",
+        "slot machine closeup",
+        "gambling psychology dark",
+        "money aesthetic",
+        "dopamine visuals"
+    ],
+    "music": "dark"
+},
+{
+    "title": "Your brain creates blind spots",
+    "hook": "Your eyes literally have holes in their vision.",
+    "story": "Each of your eyes has a blind spot where the optic nerve connects to the retina. There is absolutely no visual information there. But instead of showing a black hole, your brain automatically fills the missing area using surrounding details.",
+    "outro": "Part of what you see is completely invented by your brain. Follow for more.",
+    "hashtags": "#science #vision #brainfacts #shorts #fyp",
+    "keywords": [
+        "eye macro cinematic",
+        "vision illusion dark",
+        "brain visualization",
+        "human perception abstract",
+        "optical illusion aesthetic"
+    ],
+    "music": "mysterious"
+},
 
-    {
-        "title": "Your nose can smell one trillion different scents",
-        "hook": "For decades, science textbooks confidently claimed humans could detect around 10,000 different smells. That number was completely made up.",
-        "story": "A 2014 study published in the journal Science tested the actual limit and found it is at least one trillion. Your nose contains around 400 distinct smell receptor types that combine into molecular fingerprints of extraordinary complexity. For comparison, your eyes use only three types of color receptors. Your sense of smell is likely the most sensitive and underappreciated sensory system in your entire body.",
-        "outro": "Your nose is a trillion-dollar instrument you have been ignoring your whole life. Follow for more surprising science.",
-        "tags": ["#science", "#brainfacts", "#human", "#mindblown"],
-        "hashtags": "#science #brainfacts #human #mindblown #shorts #fyp",
-        "keywords": ["flowers closeup cinematic", "sensory dramatic portrait", "smell aesthetic macro", "nature closeup beautiful"],
-        "music": "cinematic",
-    },
+{
+    "title": "Your brain loves unfinished stories",
+    "hook": "Your brain hates unfinished information.",
+    "story": "Psychologists call it the Zeigarnik effect. Your brain remembers unfinished tasks and unanswered questions more strongly than completed ones. That is why cliffhangers and mystery endings feel impossible to ignore.",
+    "outro": "Your brain is addicted to unresolved tension. Follow for more.",
+    "hashtags": "#psychology #brainfacts #mindgames #shorts #fyp",
+    "keywords": [
+        "mystery cinematic",
+        "unfinished puzzle dark",
+        "brain tension visualization",
+        "human thoughts aesthetic",
+        "cliffhanger atmosphere"
+    ],
+    "music": "tense"
+},
 
-    {
-        "title": "Decision fatigue explains why you make bad choices at night",
-        "hook": "Every single decision you make — from what to eat to what to say — draws from the same finite mental resource.",
-        "story": "This is called Decision Fatigue, and it depletes across the day whether you notice it or not. A famous study of Israeli judges found that prisoners received parole 65 percent of the time in the morning, but almost zero percent by late afternoon — with no other variable changing. By evening your brain starts cutting corners, defaulting to impulsive choices, inaction, or regret-inducing shortcuts.",
-        "outro": "Schedule your hardest decisions for the morning when your brain is freshest. Follow for more psychology facts.",
-        "tags": ["#psychology", "#productivity", "#mindset", "#decisionmaking"],
-        "hashtags": "#psychology #productivity #mindset #decisionmaking #shorts #fyp",
-        "keywords": ["tired person at night cinematic", "decision making dramatic", "exhausted face portrait", "late night aesthetic"],
-        "music": "lofi",
-    },
+{
+    "title": "Your body glows in darkness",
+    "hook": "Humans technically glow in the dark.",
+    "story": "Your body constantly produces tiny amounts of light through chemical reactions happening inside your cells. The glow is far too weak for human eyes to notice, but special scientific cameras can detect it clearly.",
+    "outro": "Humans are secretly bioluminescent. Follow for more.",
+    "hashtags": "#science #humanbody #mindblown #shorts #fyp",
+    "keywords": [
+        "human silhouette glow",
+        "body light cinematic",
+        "bioluminescence abstract",
+        "dark science aesthetic",
+        "energy visualization"
+    ],
+    "music": "ambient"
+},
 
-    {
-        "title": "You hear your name in a noisy room without trying",
-        "hook": "Even in a loud, crowded, chaotic room, your brain will instantly pick your own name out of the noise — without any conscious effort.",
-        "story": "This is called the Cocktail Party Effect. Your auditory system runs a continuous background filter on every sound around you, below the level of conscious awareness. Most input gets discarded as irrelevant. But your name, your close friends' names, and emotionally charged words you care about bypass the filter automatically. Your brain has been quietly monitoring every conversation in the room the entire time.",
-        "outro": "Your brain is always eavesdropping — even when you think you are completely zoned out. Follow for more science.",
-        "tags": ["#brainfacts", "#neuroscience", "#science", "#mindblown"],
-        "hashtags": "#brainfacts #neuroscience #science #mindblown #shorts #fyp",
-        "keywords": ["noisy party crowd cinematic", "person listening dramatic", "crowded room aesthetic", "sound wave visualization"],
-        "music": "mysterious",
-    },
+{
+    "title": "Your brain can fake pain",
+    "hook": "Your brain can create real pain even when nothing is wrong.",
+    "story": "Pain is not directly produced by injuries. It is created by your brain after interpreting signals from the body. Under stress or fear, the brain can sometimes generate pain even without physical damage.",
+    "outro": "Your brain decides what hurts. Follow for more.",
+    "hashtags": "#science #brainfacts #humanbody #shorts #fyp",
+    "keywords": [
+        "pain visualization cinematic",
+        "human nerves dark",
+        "brain signals abstract",
+        "stress psychology",
+        "medical aesthetic"
+    ],
+    "music": "dramatic"
+},
 
-    {
-        "title": "The Dunning Kruger effect explains overconfident people",
-        "hook": "The less someone knows about a subject, the more confident they tend to be — and this is not a personality flaw, it is a cognitive one.",
-        "story": "Psychologists David Dunning and Justin Kruger discovered that incompetent people systematically overestimate their own ability because they lack the very knowledge needed to recognize their incompetence. Meanwhile, genuine experts are acutely aware of how much they do not know, making them appear uncertain compared to beginners. In short: the people most sure of themselves are often the least qualified to be.",
-        "outro": "True expertise always comes with humility. The loudest voice in the room is rarely the most informed. Follow for more.",
-        "tags": ["#psychology", "#mindset", "#selfawareness", "#humanbehavior"],
-        "hashtags": "#psychology #mindset #selfawareness #humanbehavior #shorts #fyp",
-        "keywords": ["confident person cinematic portrait", "knowledge concept dramatic", "overconfident aesthetic", "thinking person dramatic lighting"],
-        "music": "ambient",
-    },
+{
+    "title": "Your heartbeat changes around people",
+    "hook": "Your heart reacts differently depending on who is near you.",
+    "story": "Your nervous system constantly responds to social situations. Around certain people, your heartbeat, breathing, and stress hormones can shift automatically without you consciously noticing.",
+    "outro": "Your body reacts to people before your mind does. Follow for more.",
+    "hashtags": "#psychology #humanbehavior #brainfacts #shorts #fyp",
+    "keywords": [
+        "heartbeat visualization",
+        "human interaction cinematic",
+        "emotional atmosphere dark",
+        "body reaction aesthetic",
+        "social psychology"
+    ],
+    "music": "sad"
+},
 
-    {
-        "title": "Déjà vu is your brain catching a glitch",
-        "hook": "Déjà vu is not a mystical experience or a past-life memory. It is your brain catching itself making a mistake in real time.",
-        "story": "Neuroscientists believe it happens when two brain systems briefly fall out of sync. Your familiarity recognition system fires a fraction of a second before your memory retrieval system can attach any context to it. So the present moment registers as intensely familiar, but no matching memory can be found — because none exists. Your brain is essentially experiencing a false positive from its own recognition software.",
-        "outro": "Déjà vu is your brain running a self-diagnostic and flagging the error. Follow for more brain science.",
-        "tags": ["#brainfacts", "#neuroscience", "#dejavu", "#mindblown"],
-        "hashtags": "#brainfacts #neuroscience #dejavu #mindblown #shorts #fyp",
-        "keywords": ["glitch visual effect cinematic", "mind bending aesthetic", "surreal portrait dramatic", "memory concept art"],
-        "music": "mysterious",
-    },
+{
+    "title": "Your brain ignores repetition",
+    "hook": "Your brain slowly stops noticing things that repeat constantly.",
+    "story": "When your brain sees the same stimulus repeatedly, it begins filtering it out to save energy. That is why background sounds, smells, or even visual details disappear from your awareness over time.",
+    "outro": "Your brain deletes information it thinks is unimportant. Follow for more.",
+    "hashtags": "#brainfacts #science #psychology #shorts #fyp",
+    "keywords": [
+        "repetition abstract",
+        "human brain cinematic",
+        "mind filtering visuals",
+        "dark psychology aesthetic",
+        "focus visualization"
+    ],
+    "music": "ambient"
+},
 
-    {
-        "title": "Your body language changes how others see your brain",
-        "hook": "Before you say a single word, your body has already told everyone in the room what kind of person you are.",
-        "story": "Research shows that observers form subconscious judgements about intelligence, trustworthiness, and status from posture and movement within 100 milliseconds — faster than conscious thought. Open, upright posture activates trust circuits in others automatically. Slouching and crossed arms signal low confidence and defensiveness. Even more striking: adopting an open posture for just two minutes measurably changes your own hormone levels and risk tolerance.",
-        "outro": "Your body is speaking to every room before your voice does. Use it intentionally. Follow for more body language facts.",
-        "tags": ["#bodylanguage", "#psychology", "#confidence", "#communication"],
-        "hashtags": "#bodylanguage #psychology #confidence #communication #shorts #fyp",
-        "keywords": ["confident posture portrait cinematic", "body language dramatic", "standing tall aesthetic", "power pose professional"],
-        "music": "cinematic",
-    },
+{
+    "title": "Your brain fears uncertainty",
+    "hook": "Humans fear uncertainty more than pain itself.",
+    "story": "Studies show the brain often experiences uncertainty as more stressful than knowing something bad will happen. The unknown forces the brain to constantly predict threats and possible outcomes.",
+    "outro": "Your brain wants certainty more than comfort. Follow for more.",
+    "hashtags": "#psychology #fear #brainfacts #shorts #fyp",
+    "keywords": [
+        "dark hallway cinematic",
+        "uncertainty visualization",
+        "fear psychology",
+        "human anxiety aesthetic",
+        "mind suspense"
+    ],
+    "music": "tense"
+},
 
-    {
-        "title": "Social media is engineered to exploit your brain",
-        "hook": "The pull-to-refresh gesture on social media apps was deliberately designed to work exactly like a slot machine lever.",
-        "story": "Former product designers at major tech companies have confirmed this publicly. Infinite scroll eliminates natural stopping points. Variable reward notifications — sometimes something exciting, sometimes nothing — exploit the same dopamine loop that makes gambling addictive. Your brain cannot predict when the next hit will come, so it keeps pulling. The engineers who built these systems often refused to let their own children use them.",
-        "outro": "You are not addicted to the app. You are addicted to the unpredictable reward it dangles. Follow for more.",
-        "tags": ["#psychology", "#socialmedia", "#dopamine", "#mindset"],
-        "hashtags": "#psychology #socialmedia #dopamine #mindset #shorts #fyp",
-        "keywords": ["phone scrolling cinematic", "social media addiction dramatic", "screen glow aesthetic", "slot machine concept visual"],
-        "music": "mysterious",
-    },
+{
+    "title": "Your dreams use real emotions",
+    "hook": "Dreams are built from emotions more than logic.",
+    "story": "While dreaming, the emotional centers of the brain remain highly active, but logical reasoning becomes weaker. That is why bizarre dream events still feel emotionally real while they are happening.",
+    "outro": "Dreams feel real because your emotions are real. Follow for more.",
+    "hashtags": "#dreams #brainfacts #psychology #shorts #fyp",
+    "keywords": [
+        "dream sequence cinematic",
+        "sleep visualization dark",
+        "human subconscious",
+        "surreal atmosphere",
+        "night aesthetic"
+    ],
+    "music": "mysterious"
+},
 
-    {
-        "title": "Eye contact for too long feels like a threat",
-        "hook": "There is a precise window of eye contact that feels warm and connecting — and going just a few seconds beyond it feels like a predator staring you down.",
-        "story": "Research places the comfortable range at about three to four seconds of direct eye contact. Beyond that, the amygdala — your brain's threat detection centre — activates a stress response identical to facing physical danger. Prolonged unbroken gaze is a dominance signal in nearly every social species on Earth. Politicians, negotiators, and manipulators instinctively understand and exploit this threshold.",
-        "outro": "Eye contact is one of the most powerful social tools you own. Use it in exactly the right dose. Follow for more.",
-        "tags": ["#psychology", "#bodylanguage", "#eyecontact", "#socialskills"],
-        "hashtags": "#psychology #bodylanguage #eyecontact #socialskills #shorts #fyp",
-        "keywords": ["intense eye contact portrait", "staring dramatic close up", "eyes cinematic macro", "human gaze aesthetic portrait"],
-        "music": "mysterious",
-    },
+{
+    "title": "Humans naturally copy each other",
+    "hook": "People secretly mirror each other constantly.",
+    "story": "Humans subconsciously copy posture, gestures, speech patterns, and facial expressions during conversations. This behavior helps create trust and social bonding without people realizing it.",
+    "outro": "Your brain is constantly syncing with other people. Follow for more.",
+    "hashtags": "#psychology #bodylanguage #humanbehavior #shorts #fyp",
+    "keywords": [
+        "human interaction cinematic",
+        "body language closeup",
+        "social psychology dark",
+        "conversation aesthetic",
+        "mirror behavior visuals"
+    ],
+    "music": "peaceful"
+},
 
-    {
-        "title": "Your memories are reconstructed every time you recall them",
-        "hook": "Your most vivid memories are not recordings — they are reconstructions, and they change slightly every single time you revisit them.",
-        "story": "When you recall a memory, it is loaded into a temporarily editable state called reconsolidation. During this window, new emotions, subtle suggestions, or surrounding context can alter the stored version before it saves back. Over years of replaying a memory, the original can drift dramatically from what actually happened. This is why two people who witnessed the same event can have genuinely different memories of it.",
-        "outro": "Your memories are fiction you have been quietly rewriting for years. Follow for more brain science.",
-        "tags": ["#brainfacts", "#memory", "#neuroscience", "#mindblown"],
-        "hashtags": "#brainfacts #memory #neuroscience #mindblown #shorts #fyp",
-        "keywords": ["memory fading aesthetic cinematic", "brain reconstruction visualization", "vintage photo blur dramatic", "mind concept art portrait"],
-        "music": "mysterious",
-    },
+{
+    "title": "Your brain needs boredom",
+    "hook": "Your brain actually needs boredom to function properly.",
+    "story": "Moments of boredom allow your brain to reset, process memories, and generate creative ideas. Constant stimulation from screens and notifications reduces the amount of quiet mental recovery your brain receives.",
+    "outro": "Silence is healthier for your brain than you think. Follow for more.",
+    "hashtags": "#brainfacts #dopamine #psychology #shorts #fyp",
+    "keywords": [
+        "quiet room cinematic",
+        "human thinking aesthetic",
+        "mindfulness visuals",
+        "brain recovery abstract",
+        "digital detox dark"
+    ],
+    "music": "peaceful"
+},
+{
+    "title": "Your brain changes your voice",
+    "hook": "Your real voice sounds different from what you hear in your head.",
+    "story": "When you speak, your voice travels through both the air and the bones inside your skull. That extra vibration makes your voice sound deeper and fuller to you than it does to everyone else.",
+    "outro": "That strange feeling hearing your own voice is completely normal. Follow for more.",
+    "hashtags": "#science #brainfacts #humanbody #shorts #fyp",
+    "keywords": [
+        "microphone cinematic",
+        "voice wave visualization",
+        "human speaking closeup",
+        "audio science aesthetic",
+        "sound vibration dark"
+    ],
+    "music": "ambient"
+},
 
-    {
-        "title": "The human brain generates enough electricity to power a light bulb",
-        "hook": "Right now, without doing anything special, your brain is producing roughly 23 watts of electrical power.",
-        "story": "The brain contains approximately 86 billion neurons, each capable of firing electrochemical signals up to a thousand times per second. The combined electrical activity of this network generates enough power to keep a small light bulb glowing. During deep focus, creative flow states, or vivid dreaming, this output increases noticeably. Your brain consumes around 20 percent of your body's total energy while accounting for only 2 percent of its weight.",
-        "outro": "The most powerful electrical device you will ever own is already inside your head. Follow for more mind facts.",
-        "tags": ["#brainfacts", "#science", "#neuroscience", "#mindblown"],
-        "hashtags": "#brainfacts #science #neuroscience #mindblown #shorts #fyp",
-        "keywords": ["brain electricity visualization", "neuron firing abstract cinematic", "light bulb dramatic glow", "electric concept art aesthetic"],
-        "music": "cinematic",
-    },
+{
+    "title": "Your brain can erase fear",
+    "hook": "Fear can disappear if your brain feels in control.",
+    "story": "Your brain reacts differently to danger depending on whether it feels helpless or prepared. That is why scary situations can feel exciting in movies or rollercoasters but terrifying in real life.",
+    "outro": "Control changes how your brain experiences fear. Follow for more.",
+    "hashtags": "#psychology #fear #brainfacts #shorts #fyp",
+    "keywords": [
+        "rollercoaster cinematic",
+        "fear psychology dark",
+        "human emotions closeup",
+        "adrenaline aesthetic",
+        "thriller atmosphere"
+    ],
+    "music": "dramatic"
+},
 
-    {
-        "title": "Fear and excitement feel identical in your body",
-        "hook": "Fear and excitement produce an absolutely identical physical response in your body — the only difference is the story your brain tells about it.",
-        "story": "Rapid heartbeat, shallow breathing, dilated pupils, tensed muscles — these are the same in both states. Neuroscientists call this physiological arousal, and it is neutral until your brain labels it. Studies by Harvard psychologist Alison Wood Brooks found that telling yourself you are excited rather than afraid before a high-stakes performance — a speech, an exam, a competition — measurably improves the outcome.",
-        "outro": "Next time you feel fear before something important, say out loud: I am excited. Your brain will believe it. Follow for more.",
-        "tags": ["#psychology", "#mindset", "#brainfacts", "#motivation"],
-        "hashtags": "#psychology #mindset #brainfacts #motivation #shorts #fyp",
-        "keywords": ["scared excited face portrait cinematic", "adrenaline rush dramatic", "fear emotion aesthetic", "rollercoaster dramatic shot"],
-        "music": "upbeat",
-    },
+{
+    "title": "Your brain can hallucinate faces",
+    "hook": "Your brain sees faces where none exist.",
+    "story": "Humans are extremely sensitive to facial patterns. Your brain is so focused on recognizing faces that it often creates fake ones from random objects like clouds, shadows, or walls.",
+    "outro": "Your brain would rather see fake faces than miss a real one. Follow for more.",
+    "hashtags": "#psychology #brainfacts #science #shorts #fyp",
+    "keywords": [
+        "face illusion cinematic",
+        "cloud patterns aesthetic",
+        "shadow face dark",
+        "human perception abstract",
+        "pareidolia visualization"
+    ],
+    "music": "mysterious"
+},
 
-    {
-        "title": "You have four to six seconds to make a first impression",
-        "hook": "People form a complete and surprisingly accurate judgement about you within the first four to six seconds of meeting you.",
-        "story": "These snap assessments cover trustworthiness, competence, dominance, and warmth — and studies show they hold up against longer evaluations with remarkable consistency. Even more unsettling: once a first impression is formed, it takes significantly more counter-evidence to change it than it took to create it. This cognitive stickiness is called anchoring, and it means that first impression you made three years ago is probably still influencing how that person sees you today.",
-        "outro": "You never truly get a second chance at a first impression. The science backs that up completely. Follow for more.",
-        "tags": ["#psychology", "#firstimpression", "#humanbehavior", "#socialskills"],
-        "hashtags": "#psychology #firstimpression #humanbehavior #socialskills #shorts #fyp",
-        "keywords": ["meeting handshake cinematic", "first impression dramatic portrait", "social interaction aesthetic", "professional meeting lighting"],
-        "music": "cinematic",
-    },
+{
+    "title": "Your body remembers stress",
+    "hook": "Stress can stay inside your body long after the moment ends.",
+    "story": "When stress hormones remain elevated for too long, your body stays in survival mode. Muscles tighten, digestion slows, and the nervous system becomes hyper-alert even after the danger disappears.",
+    "outro": "Your body remembers stress even when your mind moves on. Follow for more.",
+    "hashtags": "#stress #psychology #humanbody #shorts #fyp",
+    "keywords": [
+        "stress visualization cinematic",
+        "human anxiety dark",
+        "body tension aesthetic",
+        "nervous system closeup",
+        "emotional atmosphere"
+    ],
+    "music": "sad"
+},
 
-    {
-        "title": "The Baader Meinhof effect explains why you see things everywhere",
-        "hook": "You learn a new word, and suddenly you hear it three times in the same week. You buy a red car, and suddenly red cars are everywhere. This is not a coincidence.",
-        "story": "Called the Frequency Illusion or Baader-Meinhof Phenomenon, it works in two stages. First, selective attention makes your brain flag the newly learned thing as relevant and worth tracking. Second, confirmation bias makes you notice and remember every hit while invisibly discarding every miss. The red cars were always there in the same numbers. Your brain just started keeping score on one side only.",
-        "outro": "Your attention does not observe reality — it filters and constructs it. Follow for more psychology facts.",
-        "tags": ["#psychology", "#mindset", "#brainfacts", "#awareness"],
-        "hashtags": "#psychology #mindset #brainfacts #awareness #shorts #fyp",
-        "keywords": ["red car street cinematic", "attention focus dramatic", "frequency illusion aesthetic", "crowd spotting one thing"],
-        "music": "ambient",
-    },
+{
+    "title": "Your brain rewards curiosity",
+    "hook": "Curiosity activates the same reward systems as pleasure.",
+    "story": "When your brain encounters unanswered questions, dopamine levels can rise as you search for the answer. That is why mysteries, cliffhangers, and strange facts feel deeply satisfying.",
+    "outro": "Your brain is literally addicted to learning new things. Follow for more.",
+    "hashtags": "#psychology #brainfacts #science #shorts #fyp",
+    "keywords": [
+        "mystery cinematic",
+        "brain dopamine visualization",
+        "human curiosity aesthetic",
+        "question mark abstract",
+        "learning dark visuals"
+    ],
+    "music": "cinematic"
+},
 
-    {
-        "title": "Helping others is the fastest route to feeling better yourself",
-        "hook": "When you feel low, science says the fastest way to improve your own mood is to do something for someone else.",
-        "story": "Acts of kindness trigger a release of serotonin in the brain of both the giver and the receiver. Remarkably, even a bystander who simply witnesses the act gets the same chemical lift — researchers call this moral elevation. Studies show that spending money on others produces significantly more happiness than spending the same amount on yourself. Your brain is wired to reward generosity even more than self-gratification.",
-        "outro": "Generosity is a drug your brain manufactures for free. The more you give it away, the more you have. Follow for more.",
-        "tags": ["#psychology", "#kindness", "#mentalhealth", "#brainfacts"],
-        "hashtags": "#psychology #kindness #mentalhealth #brainfacts #shorts #fyp",
-        "keywords": ["helping hand cinematic portrait", "kindness moment dramatic", "two people connecting aesthetic", "gratitude emotion close up"],
-        "music": "ambient",
-    },
+{
+    "title": "Humans fear being watched",
+    "hook": "Your brain behaves differently when you think someone is watching.",
+    "story": "Humans evolved in social groups where reputation affected survival. Even today, the feeling of being observed can instantly change posture, behavior, and decision making.",
+    "outro": "Your brain is constantly aware of social judgment. Follow for more.",
+    "hashtags": "#psychology #humanbehavior #brainfacts #shorts #fyp",
+    "keywords": [
+        "security camera cinematic",
+        "human face closeup",
+        "social anxiety dark",
+        "observation aesthetic",
+        "body language visuals"
+    ],
+    "music": "tense"
+},
 
-    {
-        "title": "Your gut has its own independent nervous system",
-        "hook": "Your gut contains over 500 million neurons and can make decisions completely independently of your brain — which is why scientists call it the second brain.",
-        "story": "The enteric nervous system lining your digestive tract communicates bidirectionally with your brain via the vagus nerve, but it can also function entirely on its own. It produces approximately 95 percent of your body's serotonin — the primary mood-regulating neurotransmitter. This is why chronic stress shows up as digestive problems, why anxiety physically lives in your stomach, and why gut feelings are often neurologically real signals rather than metaphors.",
-        "outro": "Your gut is not just digesting food. It is processing your emotional world in parallel with your brain. Follow for more.",
-        "tags": ["#science", "#brainfacts", "#gutbrain", "#neuroscience"],
-        "hashtags": "#science #brainfacts #gutbrain #neuroscience #shorts #fyp",
-        "keywords": ["stomach body cinematic", "gut feeling dramatic", "nervous system visualization", "human body aesthetic portrait"],
-        "music": "ambient",
-    },
+{
+    "title": "Your brain slows time in danger",
+    "hook": "Time can feel slower during dangerous moments.",
+    "story": "During high-adrenaline situations, your brain records far more details than normal. Because of this intense memory processing, dangerous moments can feel much longer than they actually were.",
+    "outro": "Your brain stretches time when survival matters. Follow for more.",
+    "hashtags": "#science #brainfacts #adrenaline #shorts #fyp",
+    "keywords": [
+        "slow motion cinematic",
+        "danger visualization dark",
+        "adrenaline closeup",
+        "time distortion abstract",
+        "survival atmosphere"
+    ],
+    "music": "dramatic"
+},
+
+{
+    "title": "Your brain gets addicted to drama",
+    "hook": "Negative information grabs your brain faster than positive news.",
+    "story": "The human brain evolved to prioritize threats and danger because survival depended on it. That is why shocking headlines, conflict, and drama attract attention so easily online.",
+    "outro": "Your brain is naturally drawn toward negativity. Follow for more.",
+    "hashtags": "#psychology #brainfacts #socialmedia #shorts #fyp",
+    "keywords": [
+        "news feed cinematic",
+        "social media dark",
+        "human attention visualization",
+        "drama psychology aesthetic",
+        "digital overload"
+    ],
+    "music": "dark"
+},
+
+{
+    "title": "Your brain fears silence at night",
+    "hook": "Silence feels more intense at night for a reason.",
+    "story": "At night, the brain becomes more alert to unusual sounds because humans evolved to detect danger in darkness. In quiet environments, even tiny noises can suddenly feel threatening.",
+    "outro": "Your brain becomes hyper-aware when visibility disappears. Follow for more.",
+    "hashtags": "#psychology #fear #brainfacts #shorts #fyp",
+    "keywords": [
+        "dark room cinematic",
+        "night silence aesthetic",
+        "fear visualization",
+        "human instincts dark",
+        "suspense atmosphere"
+    ],
+    "music": "tense"
+},
+
+{
+    "title": "Your brain can create phantom vibrations",
+    "hook": "Your phone can vibrate even when it never moved.",
+    "story": "Many people experience phantom vibration syndrome where the brain mistakes random sensations for phone notifications. Your brain becomes so trained to expect alerts that it sometimes creates fake ones.",
+    "outro": "Your brain can hallucinate notifications. Follow for more.",
+    "hashtags": "#psychology #dopamine #brainfacts #shorts #fyp",
+    "keywords": [
+        "phone closeup cinematic",
+        "notification visualization",
+        "social media addiction dark",
+        "dopamine aesthetic",
+        "human attention span"
+    ],
+    "music": "mysterious"
+}
 
 ]
