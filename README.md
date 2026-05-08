@@ -1,96 +1,196 @@
-# YouTube Shorts Bot — Setup Guide
+# YouTube Shorts Bot
 
-## What this does
-Runs once a day and creates a complete YouTube Short:
-- Writes the script automatically (8 scripts built in, cycles daily)
-- Generates AI voiceover (free, no account needed)
-- Downloads a matching background video from Pexels (free API)
-- Burns in animated captions
-- Exports a 1080x1920 MP4 ready to upload
+Automatically generates YouTube Shorts videos from fact/psychology/science scripts.
+Each video is ~35 seconds with:
+- Neural AI voiceover (Microsoft Edge TTS)
+- Cinematic background video from Pexels
+- Karaoke-style synced yellow captions (Montserrat ExtraBold)
+- Mood-matched background music (auto-downloaded)
+- Ken Burns zoom effect + dark overlay
 
-## Setup (one time, ~5 minutes)
+---
 
-### Step 1 — Install Python
-Download from https://python.org (version 3.9 or newer)
+## Prerequisites
 
-### Step 2 — Install libraries
-Open Terminal (Mac/Linux) or Command Prompt (Windows) and run:
+- Python 3.11 or higher
+- ffmpeg
+- A free Pexels API key — get one at https://www.pexels.com/api/
+
+---
+
+## Setup (New Machine)
+
+### 1. Install ffmpeg
+
+**Mac:**
+```bash
+brew install ffmpeg
 ```
-pip install moviepy gtts requests Pillow numpy
+
+**Ubuntu/Debian:**
+```bash
+sudo apt-get install ffmpeg
 ```
 
-### Step 3 — Get your free Pexels API key
-1. Go to https://www.pexels.com/api/
-2. Sign up (free, takes 1 minute)
-3. Copy your API key
+**Windows:**
+Download from https://ffmpeg.org/download.html and add to PATH.
 
-### Step 4 — Paste your key
-Open `shorts_bot.py` in any text editor.
-Find this line near the top:
+---
+
+### 2. Copy the project files
+
+Copy these files to your machine:
+```
+shorts_bot_new.py
+scripts.txt
+```
+
+Do NOT copy the `venv/` folder — it must be recreated per machine.
+
+---
+
+### 3. Create a virtual environment and install packages
+
+```bash
+python3 -m venv venv
+source venv/bin/activate        # Mac/Linux
+# OR
+venv\Scripts\activate           # Windows
+
+pip install "moviepy==2.1.1" edge-tts gtts requests numpy imageio imageio-ffmpeg decorator faster-whisper Pillow
+```
+
+---
+
+### 4. Add your Pexels API key
+
+Open `shorts_bot_new.py` and set your key near the top:
+
 ```python
-PEXELS_API_KEY = "YOUR_KEY_HERE"
+PEXELS_API_KEY = "your_key_here"
 ```
-Replace `YOUR_KEY_HERE` with your actual key. Save the file.
-
-### Step 5 — Run it
-```
-python shorts_bot.py
-```
-The MP4 will appear in the `output/` folder after 2-3 minutes.
 
 ---
 
-## Run it automatically every day
+### 5. Run it
 
-### Mac / Linux (cron)
-```
-crontab -e
-```
-Add this line (runs at 9am daily):
-```
-0 9 * * * /usr/bin/python3 /full/path/to/shorts_bot.py
+```bash
+source venv/bin/activate
+python3 shorts_bot_new.py
 ```
 
-### Windows (Task Scheduler)
-1. Open Task Scheduler
-2. Create Basic Task
-3. Trigger: Daily at 9:00 AM
-4. Action: Start a program → `python` → Arguments: `C:\path\to\shorts_bot.py`
+The first run will automatically:
+- Download the Montserrat ExtraBold font into `./fonts/`
+- Download mood-matched background music into `./music/cache/`
+- Generate the video into `./output/`
 
 ---
 
-## Customise
+## Adding Scripts
 
-### Add your own scripts
-In `shorts_bot.py`, add to the `SCRIPTS` list:
+`scripts.txt` contains 25 ready-to-use fact scripts.
+Copy the `SCRIPTS = [...]` block from it and paste it into `shorts_bot_new.py`, replacing the existing `SCRIPTS` list.
+
+Each script follows this format:
+
 ```python
 {
-    "title":    "Your video title",
-    "hook":     "The first sentence — make it shocking or surprising.",
-    "story":    "The explanation. Keep it under 20 seconds when read aloud.",
-    "outro":    "Follow for more [topic].",
-    "tags":     ["#yourtag", "#anothertag"],
-    "keywords": ["pexels search term 1", "pexels search term 2"],
+    "title": "Short punchy title",
+    "hook": "Opening sentence that grabs attention.",
+    "story": "3-4 sentences of rich factual detail. ~60-70 words.",
+    "outro": "Closing line with call to action. Follow for more.",
+    "tags": ["#psychology", "#brainfacts"],
+    "hashtags": "#psychology #brainfacts #shorts #fyp",
+    "keywords": ["cinematic search term for Pexels video"],
 },
 ```
 
-### Make more per day
-Change `SHORTS_PER_DAY = 1` to `2` or `3`.
+---
 
-### Change caption style
-Adjust `CAPTION_WORDS = 5` (words per caption line) and `FONT_SIZE` in the config.
+## Config Options
+
+All settings are at the top of `shorts_bot_new.py`:
+
+| Setting | Default | Description |
+|---|---|---|
+| `PEXELS_API_KEY` | `"YOUR_KEY_HERE"` | Free Pexels API key |
+| `SHORTS_PER_DAY` | `1` | Videos to generate per run |
+| `OUTPUT_DIR` | `./output` | Where MP4 files are saved |
+| `MUSIC_DIR` | `./music` | Music cache folder |
+| `FONT_PATH` | `./fonts/Montserrat-ExtraBold.ttf` | Caption font |
+| `VIDEO_W / VIDEO_H` | `1080 x 1920` | 9:16 portrait for Shorts |
+| `FPS` | `30` | Frames per second |
+
+---
+
+## Background Music
+
+Music is selected automatically based on the script's topic:
+
+| Mood | Triggers on keywords |
+|---|---|
+| `ambient` | psychology, brain, science, emotion, mind |
+| `mysterious` | history, mystery, ancient, secret, dark |
+| `cinematic` | story, dramatic, epic, inspiring |
+| `upbeat` | motivation, success, fitness, energy |
+| `lofi` | focus, study, calm, relax, sleep |
+
+Each mood downloads once and is cached in `./music/cache/`.
+To use your own music, drop MP3 files named `ambient.mp3`, `mysterious.mp3`, `cinematic.mp3`, `upbeat.mp3`, or `lofi.mp3` into `./music/cache/`.
+
+---
+
+## Folder Structure
+
+```
+shorts_bot/
+├── shorts_bot_new.py              # Main bot
+├── scripts.txt                    # Script library
+├── README.md                      # This file
+├── fonts/
+│   └── Montserrat-ExtraBold.ttf  # Auto-downloaded on first run
+├── music/
+│   └── cache/
+│       ├── ambient.mp3            # Auto-downloaded on first run
+│       ├── mysterious.mp3
+│       ├── cinematic.mp3
+│       ├── upbeat.mp3
+│       └── lofi.mp3
+└── output/
+    └── 20260508_01_Title.mp4      # Generated videos
+```
+
+---
+
+## Daily Schedule (Optional)
+
+**Mac/Linux** — runs at 9am every day:
+```bash
+crontab -e
+```
+Add this line (update the path):
+```
+0 9 * * * /path/to/shorts_bot/venv/bin/python3 /path/to/shorts_bot/shorts_bot_new.py
+```
+
+**Windows** — use Task Scheduler:
+1. Open Task Scheduler → Create Basic Task
+2. Trigger: Daily at 9:00 AM
+3. Action: Start a program → `python` → Arguments: `C:\path\to\shorts_bot_new.py`
 
 ---
 
 ## Troubleshooting
 
-**"No module named moviepy"** → run `pip install moviepy` again
+**`ModuleNotFoundError`** — Activate the venv first:
+```bash
+source venv/bin/activate
+```
 
-**"ffmpeg not found"** → install ffmpeg:
-- Mac: `brew install ffmpeg`
-- Ubuntu: `sudo apt install ffmpeg`
-- Windows: download from https://ffmpeg.org and add to PATH
+**No background video** — Check your Pexels API key is set correctly in `shorts_bot_new.py`.
 
-**Videos use color background** → paste your Pexels API key (Step 4)
+**Font falls back to Arial** — Montserrat auto-downloads on first run. If it fails, the bot continues with Arial Bold — no action needed.
 
-**Voice sounds robotic** → gTTS uses Google's free TTS. It is natural enough for Shorts.
+**No background music** — Music auto-downloads on first run. If your network blocks the source, manually place MP3 files in `./music/cache/` named by mood (see above).
+
+**Video generation is slow** — Normal. Compositing a 1080x1920 video with captions takes 1-3 minutes per Short depending on your machine.
