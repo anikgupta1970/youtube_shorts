@@ -42,16 +42,16 @@ FPS             = 30
 
 SCRIPTS = [
     
-   {                    
-      "title": "Your brain physically grows every time you learn something hard",
-      "hook": "Every time you push through something difficult, your brain is not just working harder — it is literally rebuilding itself.",                                                                   
-      "story": "Neuroscientist Michael Merzenich spent decades proving that the adult brain never stops changing. Every new skill, every hard problem you wrestle with, every moment of focused struggle causesneurons to fire together, rewire, and form stronger connections — a process called neuroplasticity. London taxi drivers who memorize thousands of streets have measurably larger hippocampi than            non-drivers. Violinists have larger brain regions dedicated to their left hand. Your brain physically expands around whatever you repeatedly challenge it with.",                                            
-      "outro": "You are not stuck with the brain you were born with. Every hard thing you do is making it bigger. Follow for more.",                                                                           
-      "tags": ["#neuroscience", "#growthmindset", "#brainfacts", "#mindpower"],                                                                                                                                
-      "hashtags": "#neuroscience #growthmindset #brainfacts #mindpower #neuroplasticity #shorts #fyp",
-      "keywords": ["brain growing visualization cinematic", "person studying dramatic light", "neuron connection abstract", "determined person inspiring portrait"],                                           
-      "music": "inspirational",                                                                                                                                                                                
-  }
+   {
+        "title": "You yawn because of mirror neurons",
+        "hook": "Yawning is contagious — and the biological reason behind it reveals something remarkable about how humans are wired for empathy.",
+        "story": "Your brain contains mirror neurons that fire when you observe someone else performing an action, creating an internal simulation of that action in yourself. Contagious yawning is a direct result of this system. Studies show it is strongest between people who are emotionally close. The more empathy you naturally feel toward others, the more easily their yawn will trigger yours. Sociopaths almost never catch yawns.",
+        "outro": "Even reading the word yawn right now might be making you yawn. Follow for more brain science.",
+        "tags": ["#brainfacts", "#empathy", "#neuroscience", "#humanbehavior"],
+        "hashtags": "#brainfacts #empathy #neuroscience #humanbehavior #shorts #fyp",
+        "keywords": ["person yawning closeup", "tired face dramatic lighting", "social connection cinematic", "human emotion portrait"],
+        "music": "lofi",
+    }
 ]
 
 
@@ -363,7 +363,7 @@ def make_short(script: dict, index: int) -> str:
     """Build one complete YouTube Short and return the output path."""
     from moviepy import (
         VideoFileClip, AudioFileClip, CompositeVideoClip,
-        ColorClip, concatenate_videoclips, CompositeAudioClip,
+        ColorClip, concatenate_videoclips, CompositeAudioClip, TextClip,
     )
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -376,11 +376,12 @@ def make_short(script: dict, index: int) -> str:
     print(f"{'=' * 52}")
 
     # ── Voice ──
+    title_duration = 1.5   # must match the title card duration below
     voice_path = os.path.join(OUTPUT_DIR, "_tmp_voice.mp3")
     full_text  = f"{script['hook']}  {script['story']}  {script['outro']}"
     generate_voice(full_text, voice_path)
     audio    = AudioFileClip(voice_path)
-    duration = audio.duration + 1.0
+    duration = audio.duration + 1.0 + title_duration
 
     # ── Background music (auto-selected by mood) ──
     mood       = detect_mood(script)
@@ -393,11 +394,11 @@ def make_short(script: dict, index: int) -> str:
             from moviepy import concatenate_audioclips
             music = concatenate_audioclips([music] * loops)
         music = music.subclipped(0, duration).with_volume_scaled(0.12)
-        final_audio = CompositeAudioClip([audio.with_start(0.4), music])
+        final_audio = CompositeAudioClip([audio.with_start(title_duration), music])
         print(f"  Background music mixed in at 12% volume. Duration: {duration:.1f}s")
     else:
         print("  No background music found — proceeding without music.")
-        final_audio = audio.with_start(0.4)
+        final_audio = audio.with_start(title_duration)
 
     # ── Background video ──
     bg_path         = get_pexels_video(script["keywords"], duration)
@@ -439,13 +440,39 @@ def make_short(script: dict, index: int) -> str:
         .with_opacity(0.25)
     )
 
+    # ── Title card (first frame = cover photo) ──
+    font = FONT_PATH if os.path.exists(FONT_PATH) else "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
+
+    title_bg = (
+        ColorClip((VIDEO_W, VIDEO_H), color=(0, 0, 0))
+        .with_duration(title_duration)
+        .with_opacity(0.55)
+    )
+    title_clip = (
+        TextClip(
+            text=script["title"].upper(),
+            font_size=72,
+            color="white",
+            stroke_color="black",
+            stroke_width=4,
+            font=font,
+            method="caption",
+            size=(VIDEO_W - 140, None),
+        )
+        .with_start(0)
+        .with_duration(title_duration)
+        .with_position("center")
+    )
+
     # ── Karaoke captions ──
     print("  Generating text overlays...")
     text_clips = make_text_clips(voice_path)
+    # Offset captions so they start after the title card finishes
+    text_clips = [c.with_start(c.start + title_duration) for c in text_clips]
     print(f"  {len(text_clips)} caption chunks created.")
 
     # ── Compose & export ──
-    layers = [base, dark_overlay] + text_clips
+    layers = [base, dark_overlay, title_bg, title_clip] + text_clips
     print("  Compositing and exporting (this takes 1-3 min)...")
     final = (
         CompositeVideoClip(layers, size=(VIDEO_W, VIDEO_H))
