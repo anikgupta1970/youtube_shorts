@@ -39,14 +39,14 @@ FPS             = 30
 
 SCRIPTS = [
     {
-        "title": "The placebo effect works even when you know it is a placebo",
-        "hook": "Researchers gave patients sugar pills, told them they were sugar pills, and patients still got significantly better.",
-        "story": "Harvard researchers found this works even when you know it is a placebo. The ritual of taking a pill triggers real biological changes — dopamine, endorphins, immune response. Belief is a form of medicine.",
-        "outro": "The mind does not just influence the body. It heals it. Follow for more.",
-        "tags": ["#psychology", "#science", "#medicine", "#brainfacts"],
-        "hashtags": "#psychology #science #medicine #brainfacts #shorts #fyp",
-        "keywords": ["medicine pills cinematic", "doctor patient portrait", "healing light aesthetic", "mind body science"],
-        "music": "ambient",
+        "title": "Sleep deprivation makes you irrational in ways you cannot detect",
+        "hook": "After 17 hours without sleep, your cognitive performance equals a 0.05 blood alcohol level — and you will feel completely fine.",
+        "story": "The dangerous part: sleep deprivation impairs your ability to notice your own impairment. Your prefrontal cortex — responsible for judgment — degrades first. You cannot think your way out of tiredness.",
+        "outro": "Your brain literally cannot see how broken it is. Follow for more.",
+        "tags": ["#sleep", "#brainfacts", "#science", "#psychology"],
+        "hashtags": "#sleep #brainfacts #science #psychology #shorts #fyp",
+        "keywords": ["sleeping person cinematic", "night city timelapse portrait", "tired exhausted aesthetic", "clock dark dramatic"],
+        "music": "mysterious",
     }
 ]
 
@@ -468,8 +468,25 @@ def make_short(script: dict, index: int) -> str:
     text_clips = [c.with_start(c.start + title_duration) for c in text_clips]
     print(f"  {len(text_clips)} caption chunks created.")
 
+    # ── Watermark ──
+    _wm = TextClip(
+        text="@did.u.knoww",
+        font_size=36,
+        color="white",
+        stroke_color="black",
+        stroke_width=2,
+        font=font,
+        method="label",
+    )
+    watermark = (
+        _wm
+        .with_duration(duration)
+        .with_position((VIDEO_W - _wm.w - 40, int(VIDEO_H * 0.25)))
+        .with_opacity(0.6)
+    )
+
     # ── Compose & export ──
-    layers = [base, dark_overlay, title_bg, title_clip] + text_clips
+    layers = [base, dark_overlay, title_bg, title_clip] + text_clips + [watermark]
     print("  Compositing and exporting (this takes 1-3 min)...")
     final = (
         CompositeVideoClip(layers, size=(VIDEO_W, VIDEO_H))
