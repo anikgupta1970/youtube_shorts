@@ -409,69 +409,100 @@ def crossfade_concat(clips, transition=0.4):
     return VC(frame_function=make_frame, duration=total_duration)
 
 
+def pop_in(clip, pop_duration=0.08, peak_scale=1.15):
+    """
+    Scale-pop animation: clip starts at peak_scale and eases to 1.0
+    over pop_duration seconds. Gives captions a punchy CapCut-style entrance.
+    """
+    from PIL import Image
+
+    def effect(get_frame, t):
+        frame = get_frame(t)
+        if t >= pop_duration:
+            return frame
+        progress = t / pop_duration                    # 0 → 1
+        scale    = peak_scale - (peak_scale - 1.0) * progress  # peak → 1.0
+        h, w     = frame.shape[:2]
+        new_h, new_w = int(h * scale), int(w * scale)
+        pil = Image.fromarray(frame).resize((new_w, new_h), Image.LANCZOS)
+        # Crop/pad back to original size from centre
+        y1 = max(0, (new_h - h) // 2)
+        x1 = max(0, (new_w - w) // 2)
+        cropped = np.array(pil)[y1:y1 + h, x1:x1 + w]
+        # If scale < 1 the crop may be smaller — pad with zeros
+        if cropped.shape[0] < h or cropped.shape[1] < w:
+            out = np.zeros((h, w, frame.shape[2]), dtype=np.uint8)
+            out[:cropped.shape[0], :cropped.shape[1]] = cropped
+            return out
+        return cropped
+
+    return clip.transform(effect)
+
+
+def color_grade(clip):
+    """
+    Subtle cinematic color grade applied to the background:
+    mild contrast boost + warm tint (lifted reds, slight greens).
+    Costs a little render time but makes phone footage look intentional.
+    """
+    def effect(get_frame, t):
+        f = get_frame(t).astype(np.float32) / 255.0
+        f = np.clip(f * 1.10 - 0.05, 0.0, 1.0)          # contrast
+        f[:, :, 0] = np.clip(f[:, :, 0] * 1.08, 0.0, 1.0)  # warm red
+        f[:, :, 1] = np.clip(f[:, :, 1] * 1.02, 0.0, 1.0)  # slight green
+        return (f * 255).astype(np.uint8)
+    return clip.transform(effect)
+
+
 def make_text_clips(audio_path: str):
     """
-    Perfectly synced subtitles using faster-whisper word timestamps.
+    Synced single-word captions using faster-whisper word timestamps.
+    Each word pops in with a scale animation for a punchy feel.
     """
-
     from faster_whisper import WhisperModel
     from moviepy import TextClip
 
     print("  Loading Whisper model...")
-
-    model = WhisperModel(
-        "tiny",          # use "base" for better accuracy
-        compute_type="int8"
-    )
-
+    model = WhisperModel("tiny", compute_type="int8")
     print("  Transcribing audio...")
+    segments, _ = model.transcribe(audio_path, word_timestamps=True)
 
-    segments, _ = model.transcribe(
-        audio_path,
-        word_timestamps=True
-    )
-
+    font  = FONT_PATH if os.path.exists(FONT_PATH) else "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
     clips = []
 
     for segment in segments:
         for word in segment.words:
-
             text = word.word.strip()
-
             if not text:
                 continue
 
-            start = float(word.start)
-            end   = float(word.end)
-
+            start    = float(word.start)
+            end      = float(word.end)
             duration = max(0.10, (end - start) - 0.03)
-
-            font = FONT_PATH if os.path.exists(FONT_PATH) else "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
 
             try:
                 txt = (
-                    TextClip(
-                        text=text.upper(),
-                        font_size=88,
-                        color="#FFE600",
-                        stroke_color="black",
-                        stroke_width=5,
-                        font=font,
-                        method="label",
-                        bg_color=(20, 20, 20),
+                    pop_in(
+                        TextClip(
+                            text=text.upper(),
+                            font_size=88,
+                            color="#FFE600",
+                            stroke_color="black",
+                            stroke_width=5,
+                            font=font,
+                            method="label",
+                            bg_color=(20, 20, 20),
+                        )
                     )
                     .with_start(start + 0.4)
                     .with_duration(duration + 0.05)
                     .with_position(("center", 1450))
                 )
-
                 clips.append(txt)
-
             except Exception as e:
                 print(f"  Subtitle error: {e}")
 
-    print(f"  {len(clips)} synced subtitle clips created.")
-
+    print(f"  {len(clips)} caption chunks created.")
     return clips
 def make_short(script: dict, index: int) -> str:
     """Build one complete YouTube Short and return the output path."""
@@ -526,10 +557,10 @@ def make_short(script: dict, index: int) -> str:
     TRANSITION      = 0.4  # crossfade duration between scenes (seconds)
 
     def _crop_and_process(path: str, seg_duration: float):
-        """Load one clip, loop/trim to seg_duration, crop to 9:16, apply dynamic moves."""
+        """Load one clip, loop/trim to seg_duration, crop to 9:16, apply one smooth camera move."""
         raw = VideoFileClip(path, audio=False)
         if raw.duration < seg_duration:
-            n   = int(seg_duration / raw.duration) + 1
+            n   = int(raw.duration / seg_duration) + 1 if raw.duration > 0 else 2
             raw = concatenate_videoclips([raw] * n)
         raw = raw.subclipped(0, seg_duration)
         r   = raw.w / raw.h
@@ -540,7 +571,17 @@ def make_short(script: dict, index: int) -> str:
         else:
             nh  = int(raw.w / t)
             raw = raw.cropped(y1=(raw.h - nh) // 2, y2=(raw.h - nh) // 2 + nh)
-        return dynamic_bg(raw.resized((VIDEO_W, VIDEO_H)))
+        resized = raw.resized((VIDEO_W, VIDEO_H))
+        # One smooth camera move per scene — alternates so consecutive scenes feel different
+        move = random.choice(["zoom_in", "zoom_out", "pan_left", "pan_right"])
+        if move == "zoom_in":
+            return _apply_zoom(resized, start_scale=1.0, end_scale=1.05)
+        elif move == "zoom_out":
+            return _apply_zoom(resized, start_scale=1.05, end_scale=1.0)
+        elif move == "pan_left":
+            return _apply_pan(resized, direction="left", amount=0.04)
+        else:
+            return _apply_pan(resized, direction="right", amount=0.04)
 
     if bg_paths:
         n         = len(bg_paths)
@@ -549,8 +590,8 @@ def make_short(script: dict, index: int) -> str:
         seg_dur   = (duration + (n - 1) * TRANSITION) / n
         print(f"  Building background from {n} distinct clip(s) ({seg_dur:.1f}s each, {TRANSITION}s dissolves)...")
         segments  = [_crop_and_process(p, seg_dur) for p in bg_paths]
-        base      = crossfade_concat(segments, TRANSITION)
-        print(f"  {n} scenes assembled with crossfade transitions.")
+        base      = color_grade(crossfade_concat(segments, TRANSITION))
+        print(f"  {n} scenes assembled with crossfade transitions + color grade.")
     else:
         print("  Using color background (add Pexels key for real video)...")
         base = ColorClip(
