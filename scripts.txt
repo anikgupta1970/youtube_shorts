@@ -808,6 +808,88 @@ SCRIPTS = [
     "unsolved documentary montage"
   ],
   "music": "mysterious"
+},
+
+
+
+{
+  "title": "A Viking buried treasure was discovered by accident",
+  "hook": "A simple metal detector uncovered a fortune lost for 1,000 years.",
+  "story": "In 2007, an amateur metal detectorist in England discovered one of the largest Viking treasure hoards ever found. Buried beneath a field were hundreds of silver coins, jewelry, and rare artifacts hidden during violent Viking invasions over a thousand years ago.",
+  "outro": "Sometimes history waits centuries to be found again. Follow for more unbelievable stories.",
+  "tags": ["#vikings", "#history", "#treasure", "#facts"],
+  "hashtags": "#vikings #history #treasure #facts #archaeology #shorts #fyp",
+  "keywords": [
+    "viking treasure cinematic",
+    "ancient silver aesthetic",
+    "metal detector discovery visuals",
+    "historic artifact montage"
+  ],
+  "music": "mysterious"
+}
+
+{
+  "title": "A city once sold mummies as medicine",
+  "hook": "People believed powdered human remains could cure diseases.",
+  "story": "In medieval Europe, crushed Egyptian mummies were commonly sold as medicine. Doctors and merchants believed the ancient remains had healing powers, and wealthy patients consumed powdered mummy to treat everything from headaches to internal bleeding.",
+  "outro": "History can be far stranger than fiction. Follow for more bizarre true stories.",
+  "tags": ["#history", "#egypt", "#medicine", "#facts"],
+  "hashtags": "#history #egypt #medicine #facts #weirdhistory #shorts #fyp",
+  "keywords": [
+    "ancient egypt cinematic",
+    "medieval medicine aesthetic",
+    "dark history visuals",
+    "historic market montage"
+  ],
+  "music": "dark"
+}
+
+{
+  "title": "A soldier kept fighting a war for 29 years",
+  "hook": "He refused to believe World War II had ended.",
+  "story": "Japanese soldier Hiroo Onoda was sent to the Philippines during World War II with orders to never surrender. Even after the war ended in 1945, he continued hiding in the jungle for nearly three decades, believing enemy propaganda was trying to trick him into giving up.",
+  "outro": "Some wars continue long after the world moves on. Follow for more unbelievable history.",
+  "tags": ["#ww2", "#history", "#japan", "#survival"],
+  "hashtags": "#ww2 #history #japan #survival #military #shorts #fyp",
+  "keywords": [
+    "jungle survival cinematic",
+    "world war 2 aesthetic",
+    "lost soldier visuals",
+    "historic survival montage"
+  ],
+  "music": "emotional"
+}
+
+{
+  "title": "The Pentagon once planned a fake alien invasion",
+  "hook": "A Cold War idea sounded more like science fiction than reality.",
+  "story": "During the Cold War, conspiracy theories spread about secret military plans involving holograms, UFO panic, and psychological warfare. While many claims remain unproven, declassified operations confirmed governments seriously explored unusual propaganda tactics to influence public perception and enemy nations.",
+  "outro": "The line between conspiracy and reality is sometimes thinner than people think. Follow for more hidden history.",
+  "tags": ["#history", "#coldwar", "#ufo", "#conspiracy"],
+  "hashtags": "#history #coldwar #ufo #conspiracy #military #shorts #fyp",
+  "keywords": [
+    "ufo cinematic visuals",
+    "cold war conspiracy aesthetic",
+    "military documents montage",
+    "mysterious government footage"
+  ],
+  "music": "suspense"
+}
+
+{
+  "title": "An emperor once built a palace covered in mirrors",
+  "hook": "Visitors said it looked like walking inside another universe.",
+  "story": "France’s Palace of Versailles became famous for its Hall of Mirrors, a massive gallery lined with hundreds of reflective panels and chandeliers. At a time when mirrors were extremely expensive, the palace became a symbol of absolute royal power and unimaginable wealth.",
+  "outro": "Some rulers wanted castles. Others wanted entire worlds built around them. Follow for more unbelievable history.",
+  "tags": ["#france", "#history", "#palace", "#royalty"],
+  "hashtags": "#france #history #palace #royalty #versailles #shorts #fyp",
+  "keywords": [
+    "versailles cinematic",
+    "royal palace aesthetic",
+    "hall of mirrors visuals",
+    "luxury history montage"
+  ],
+  "music": "majestic"
 }
 
 ]
