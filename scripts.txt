@@ -566,4 +566,248 @@ SCRIPTS = [
     "music": "mysterious"
 }
 
+
+
+
+
+{
+  "title": "A computer once almost started World War III",
+  "hook": "A single training tape nearly triggered a nuclear response.",
+  "story": "In 1979, NORAD computers suddenly showed that the Soviet Union had launched hundreds of nuclear missiles toward America. Fighter jets and bombers prepared for retaliation before officials realized someone had accidentally loaded a training simulation into the real defense system.",
+  "outro": "Sometimes humanity survives by mere minutes. Follow for more shocking history.",
+  "tags": ["#coldwar", "#history", "#nuclear", "#usa"],
+  "hashtags": "#coldwar #history #nuclear #usa #military #shorts #fyp",
+  "keywords": [
+    "cold war bunker cinematic",
+    "nuclear alert aesthetic",
+    "military radar screen visuals",
+    "world war tension montage"
+  ],
+  "music": "tense"
+}
+
+{
+  "title": "The Eiffel Tower was supposed to be destroyed",
+  "hook": "One of the world’s most famous landmarks was meant to exist for only 20 years.",
+  "story": "When the Eiffel Tower was built for the 1889 World’s Fair in Paris, many artists hated it and called it an ugly metal monster. The structure was originally planned to be dismantled, but it survived because it became useful as a radio transmission tower.",
+  "outro": "Sometimes the things people hate become icons. Follow for more unbelievable history.",
+  "tags": ["#france", "#history", "#eiffeltower", "#architecture"],
+  "hashtags": "#france #history #eiffeltower #architecture #paris #shorts #fyp",
+  "keywords": [
+    "eiffel tower cinematic",
+    "historic paris aesthetic",
+    "vintage france visuals",
+    "architectural documentary montage"
+  ],
+  "music": "inspiring"
+}
+
+{
+  "title": "A failed assassination changed the entire world",
+  "hook": "One wrong turn sparked a global war.",
+  "story": "In 1914, Archduke Franz Ferdinand survived an assassination attempt in Bosnia. Later that day, his driver accidentally took a wrong street and stopped directly in front of another assassin, Gavrilo Princip, who fired the shots that triggered World War I.",
+  "outro": "History can change because of a single mistake. Follow for more wild true stories.",
+  "tags": ["#ww1", "#history", "#assassination", "#europe"],
+  "hashtags": "#ww1 #history #assassination #europe #war #shorts #fyp",
+  "keywords": [
+    "world war 1 cinematic",
+    "historic europe aesthetic",
+    "vintage car dramatic visuals",
+    "assassination documentary montage"
+  ],
+  "music": "dramatic"
+}
+
+{
+  "title": "The world’s richest man once crashed economies with gold",
+  "hook": "His wealth was so massive entire cities felt the impact.",
+  "story": "Mansa Musa, ruler of the Mali Empire in the 14th century, is considered one of the richest people in history. During his pilgrimage to Mecca, he distributed so much gold across Africa and the Middle East that local economies reportedly suffered inflation for years.",
+  "outro": "Some fortunes were too large for the world to handle. Follow for more unbelievable history.",
+  "tags": ["#africa", "#history", "#gold", "#empire"],
+  "hashtags": "#africa #history #gold #empire #mansamusa #shorts #fyp",
+  "keywords": [
+    "african empire cinematic",
+    "ancient gold aesthetic",
+    "desert caravan visuals",
+    "historic wealth montage"
+  ],
+  "music": "epic"
+}
+
+{
+  "title": "A man survived both atomic bombings",
+  "hook": "He witnessed Hiroshima and Nagasaki — and survived them both.",
+  "story": "Tsutomu Yamaguchi was in Hiroshima when the first atomic bomb exploded in 1945. Injured but alive, he returned home to Nagasaki just before the second bomb detonated three days later. He later became a global voice against nuclear war.",
+  "outro": "Reality can be more unbelievable than fiction. Follow for more shocking history.",
+  "tags": ["#japan", "#ww2", "#history", "#atomicbomb"],
+  "hashtags": "#japan #ww2 #history #atomicbomb #hiroshima #shorts #fyp",
+  "keywords": [
+    "hiroshima cinematic ruins",
+    "world war 2 japan aesthetic",
+    "nuclear explosion aftermath visuals",
+    "survivor documentary montage"
+  ],
+  "music": "emotional"
+},
+
+{
+  "title": "A computer once almost started World War III",
+  "hook": "A single training tape nearly triggered a nuclear response.",
+  "story": "In 1979, NORAD computers suddenly showed that the Soviet Union had launched hundreds of nuclear missiles toward America. Fighter jets and bombers prepared for retaliation before officials realized someone had accidentally loaded a training simulation into the real defense system.",
+  "outro": "Sometimes humanity survives by mere minutes. Follow for more shocking history.",
+  "tags": ["#coldwar", "#history", "#nuclear", "#usa"],
+  "hashtags": "#coldwar #history #nuclear #usa #military #shorts #fyp",
+  "keywords": [
+    "cold war bunker cinematic",
+    "nuclear alert aesthetic",
+    "military radar screen visuals",
+    "world war tension montage"
+  ],
+  "music": "tense"
+}
+
+{
+  "title": "The Eiffel Tower was supposed to be destroyed",
+  "hook": "One of the world’s most famous landmarks was meant to exist for only 20 years.",
+  "story": "When the Eiffel Tower was built for the 1889 World’s Fair in Paris, many artists hated it and called it an ugly metal monster. The structure was originally planned to be dismantled, but it survived because it became useful as a radio transmission tower.",
+  "outro": "Sometimes the things people hate become icons. Follow for more unbelievable history.",
+  "tags": ["#france", "#history", "#eiffeltower", "#architecture"],
+  "hashtags": "#france #history #eiffeltower #architecture #paris #shorts #fyp",
+  "keywords": [
+    "eiffel tower cinematic",
+    "historic paris aesthetic",
+    "vintage france visuals",
+    "architectural documentary montage"
+  ],
+  "music": "inspiring"
+}
+
+{
+  "title": "A failed assassination changed the entire world",
+  "hook": "One wrong turn sparked a global war.",
+  "story": "In 1914, Archduke Franz Ferdinand survived an assassination attempt in Bosnia. Later that day, his driver accidentally took a wrong street and stopped directly in front of another assassin, Gavrilo Princip, who fired the shots that triggered World War I.",
+  "outro": "History can change because of a single mistake. Follow for more wild true stories.",
+  "tags": ["#ww1", "#history", "#assassination", "#europe"],
+  "hashtags": "#ww1 #history #assassination #europe #war #shorts #fyp",
+  "keywords": [
+    "world war 1 cinematic",
+    "historic europe aesthetic",
+    "vintage car dramatic visuals",
+    "assassination documentary montage"
+  ],
+  "music": "dramatic"
+}
+
+{
+  "title": "The world’s richest man once crashed economies with gold",
+  "hook": "His wealth was so massive entire cities felt the impact.",
+  "story": "Mansa Musa, ruler of the Mali Empire in the 14th century, is considered one of the richest people in history. During his pilgrimage to Mecca, he distributed so much gold across Africa and the Middle East that local economies reportedly suffered inflation for years.",
+  "outro": "Some fortunes were too large for the world to handle. Follow for more unbelievable history.",
+  "tags": ["#africa", "#history", "#gold", "#empire"],
+  "hashtags": "#africa #history #gold #empire #mansamusa #shorts #fyp",
+  "keywords": [
+    "african empire cinematic",
+    "ancient gold aesthetic",
+    "desert caravan visuals",
+    "historic wealth montage"
+  ],
+  "music": "epic"
+}
+
+{
+  "title": "A man survived both atomic bombings",
+  "hook": "He witnessed Hiroshima and Nagasaki — and survived them both.",
+  "story": "Tsutomu Yamaguchi was in Hiroshima when the first atomic bomb exploded in 1945. Injured but alive, he returned home to Nagasaki just before the second bomb detonated three days later. He later became a global voice against nuclear war.",
+  "outro": "Reality can be more unbelievable than fiction. Follow for more shocking history.",
+  "tags": ["#japan", "#ww2", "#history", "#atomicbomb"],
+  "hashtags": "#japan #ww2 #history #atomicbomb #hiroshima #shorts #fyp",
+  "keywords": [
+    "hiroshima cinematic ruins",
+    "world war 2 japan aesthetic",
+    "nuclear explosion aftermath visuals",
+    "survivor documentary montage"
+  ],
+  "music": "emotional"
+},
+
+{
+  "title": "A lake once exploded and killed 1,700 people overnight",
+  "hook": "An invisible cloud silently wiped out entire villages.",
+  "story": "In 1986, Lake Nyos in Cameroon suddenly released a massive cloud of carbon dioxide trapped beneath the water. The gas spread across nearby villages while people slept, suffocating over 1,700 people and thousands of animals within hours.",
+  "outro": "Sometimes nature hides dangers no one can see. Follow for more unbelievable true stories.",
+  "tags": ["#history", "#nature", "#disaster", "#africa"],
+  "hashtags": "#history #nature #disaster #africa #science #shorts #fyp",
+  "keywords": [
+    "fog covered lake cinematic",
+    "natural disaster aesthetic",
+    "abandoned village visuals",
+    "dark documentary montage"
+  ],
+  "music": "dark"
+}
+
+{
+  "title": "The CIA once tried to spy using cats",
+  "hook": "One Cold War mission turned a cat into a secret agent.",
+  "story": "In the 1960s, the CIA launched a bizarre project called Acoustic Kitty. They surgically implanted listening devices into a cat hoping it could secretly record Soviet conversations. The mission reportedly failed almost immediately when the cat was hit by a taxi during its first operation.",
+  "outro": "Truth is sometimes stranger than satire. Follow for more unbelievable history.",
+  "tags": ["#cia", "#coldwar", "#history", "#spy"],
+  "hashtags": "#cia #coldwar #history #spy #facts #shorts #fyp",
+  "keywords": [
+    "cold war spy cinematic",
+    "secret cia documents aesthetic",
+    "surveillance operation visuals",
+    "vintage intelligence montage"
+  ],
+  "music": "quirky"
+}
+
+{
+  "title": "A prisoner escaped Alcatraz and was never found",
+  "hook": "The world’s most secure prison may have been beaten.",
+  "story": "In 1962, Frank Morris and the Anglin brothers escaped from Alcatraz using handmade tools, fake heads, and a raft made from raincoats. Officials claimed they drowned in the freezing waters, but no bodies were ever recovered.",
+  "outro": "Some mysteries refuse to stay locked away. Follow for more wild history.",
+  "tags": ["#history", "#prison", "#mystery", "#alcatraz"],
+  "hashtags": "#history #prison #mystery #alcatraz #crime #shorts #fyp",
+  "keywords": [
+    "alcatraz prison cinematic",
+    "escape tunnel aesthetic",
+    "dark prison visuals",
+    "crime documentary montage"
+  ],
+  "music": "tense"
+}
+
+{
+  "title": "A dancing plague once took over a city",
+  "hook": "Hundreds of people danced uncontrollably for days.",
+  "story": "In 1518, residents of Strasbourg suddenly began dancing in the streets without stopping. The strange phenomenon spread rapidly, with some people reportedly dancing for weeks from exhaustion, stress, or illness. Historians still debate what truly caused the bizarre outbreak.",
+  "outro": "History has mysteries science still struggles to explain. Follow for more unbelievable stories.",
+  "tags": ["#history", "#mystery", "#plague", "#facts"],
+  "hashtags": "#history #mystery #plague #facts #weirdhistory #shorts #fyp",
+  "keywords": [
+    "medieval town cinematic",
+    "dancing crowd aesthetic",
+    "historic mystery visuals",
+    "dark europe montage"
+  ],
+  "music": "mysterious"
+}
+
+{
+  "title": "An entire town disappeared overnight",
+  "hook": "One morning, a colony simply vanished without a trace.",
+  "story": "The Roanoke Colony was established in America in 1587, but when supply ships returned years later, every settler had disappeared. The only clue left behind was the word 'CROATOAN' carved into a wooden post. The mystery remains unsolved centuries later.",
+  "outro": "Some disappearances become legends forever. Follow for more unsolved history.",
+  "tags": ["#history", "#mystery", "#roanoke", "#unsolved"],
+  "hashtags": "#history #mystery #roanoke #unsolved #shorts #fyp",
+  "keywords": [
+    "abandoned colony cinematic",
+    "historic mystery aesthetic",
+    "foggy forest visuals",
+    "unsolved documentary montage"
+  ],
+  "music": "mysterious"
+}
+
 ]
