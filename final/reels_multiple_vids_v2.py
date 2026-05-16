@@ -64,6 +64,14 @@ SCRIPTS = [
 # BEST NEURAL VOICES — authoritative & clear
 # ─────────────────────────────────────────────
 VOICES = [
+  #"en-US-AndrewNeural",   # deep, confident male — best for facts/psychology
+    #"en-US-BrianNeural",    # calm, storytelling tone
+    #"en-US-EmmaNeural",     # warm, engaging female
+    #"en-GB-RyanNeural",     # British male — sounds premium/authoritative
+    #"en-GB-SoniaNeural",    # British female — very clear
+    #"en-IN-NeerjaNeural",      # Indian female — warm, clear, very natural
+    #"en-IN-PrabhatNeural",     # Indian male — confident, authoritative
+    #"en-IN-NeerjaExpressiveNeural",  # Indian female — more expressive/emotional
     "en-US-AndrewNeural",   # deep, confident male — best for facts/psychology
     "en-US-BrianNeural",    # calm, storytelling tone
     "en-US-EmmaNeural",     # warm, engaging female
