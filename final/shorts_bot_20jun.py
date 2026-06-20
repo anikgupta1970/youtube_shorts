@@ -40,18 +40,27 @@ FPS             = 30
 
 
 SCRIPTS = [
+
 {
-"title": "The snake that builds a living shield",
-"hook": "Some snakes have evolved armor-like defenses against predators.",
-"story": "Not every snake relies on venom or speed to survive. Some species use powerful muscles, thick scales, camouflage, and defensive behaviors to protect themselves. When threatened, they may flatten their bodies, imitate dangerous species, or disappear into their surroundings. Over millions of years, snakes have developed countless strategies to avoid becoming prey. Their survival is not just about hunting — it is about mastering the art of staying alive.",
-"outro": "Every creature carries millions of years of survival secrets. Follow for more.",
-"tags": ["#wildlife", "#snakes", "#nature", "#reptiles", "#shorts"],
-"hashtags": "#wildlife #snakes #nature #animals #reptiles #shorts",
-"keywords": [
-"snake in forest",
-"snake in forest","snake in forest","snake in forest","snake in forest","snake in forest","snake in forest","snake in forest"
-],
-"music": "dramatic"
+    "title": "The insect that becomes a zombie",
+    "hook": "A tiny fungus can take control of an insect's body.",
+    "story": "Some parasites have evolved one of the strangest survival strategies on Earth. Certain fungi infect insects and slowly change their behavior, forcing them to move to locations that help the parasite survive. A normal-looking insect walking through the forest may actually be under the influence of another organism. The famous zombie ant fungus is a perfect example of how nature creates bizarre relationships between living things. In the wild, survival is not always about strength — sometimes it is about control.",
+    "outro": "The wild hides secrets stranger than fiction. Follow for more.",
+    "tags": ["#wildlife", "#insects", "#nature", "#animals", "#shorts"],
+    "hashtags": "#wildlife #insects #nature #animals #fungus #shorts",
+    "keywords": [
+        "zombie ant fungus",
+        "cordyceps fungus insect",
+        "fungus growing on ant",
+        "infected insect macro",
+        "ant carrying fungus",
+        "forest insect close up",
+        "parasite insect documentary",
+        "strange insect behavior",
+        "jungle fungus",
+        "macro wildlife footage"
+    ],
+    "music": "dark"
 }
 
 ]
